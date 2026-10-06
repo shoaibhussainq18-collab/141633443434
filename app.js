@@ -8,433 +8,2535 @@
 // =========================================================================
 
 const TECHNO_PRODUCTS = [
-  // 1. FLAGSHIP HEADPHONES PRO
   {
-    id: "techno-wireless-noise-cancelling-headphones-pro",
-    title: "TECHNO Wireless Noise-Cancelling Headphones Pro",
-    shortTitle: "Wireless Pro",
-    series: "TECHNO SERIES X",
-    category: "Over-Ear Headphones",
-    price: 199.00,
-    compareAtPrice: 299.00,
-    rating: 4.9,
-    reviewCount: 128,
-    isSale: true,
-    isBestSeller: true,
-    inStock: true,
-    description: "Engineered for supreme acoustic fidelity with personalized Spatial Audio, adaptive ANC, and unmatched 40-hour wireless playtime. Precision crafted in lightweight matte composite.",
-    images: [
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAhzeAfkVnIFbTvX5yZrgkk251E9hSCkp2M3Tn1tOYXoiXBjmcMpqf-hgPIOxHC_e1AyLBA4CoNA1K75G0w001pXRLWovNJbkjW-wiOPU8aL5Afplz6EY8pv-IIGA83yrunIDWXxvwOzxj_62ipNjL6N8CLb-pNQBP1tnJl84S7XOF7n76FfWn2mtgFxafWH6xPMJFSq0_goaPS-xc1_xxKgnoB36GO60vykpjbi3M7",
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBrw64PfO2ZJcgO6xZlxLTltn4NcpGdeSPmraI5we3gxeShHtODAJB4y_RwUBtNPAQ4H5EkejyBwYLUgrlc4QieHFUBSdbJwShmaTsDD1DvdccQw-nvL6EBgI5PYejr4HWrXXEbPnk6_qi3Jxl_clEJkAvrTaAb0Nowxnb3-tGJ0LfgS681seampXxeohmYe9ICOcPYl3gAN-5lHg8eqLyCY35mC-WTSaTW8rz2qe3G",
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuA-SnThQetwztk9ZjvEOdSHibHyR8iZL6iyoOaG4PBWHc_hyp8ZWt4olAbdHfDs5VJdLvAP6ib3q2NoRk7l1IHppnGM0ajQRYOvxFWhrEqphPTI7dboJ_zINYPDgbWSWxt5C9-EbyFoGVcat5k4WWVQwMXjvq2Pz42HR93IWas9rfqEBRXVB22yi1zUGt9pBORUGXn32TqAgAUY0V98fE47lPVkYSJR_T7emGA_BIco",
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCX4o3YWU9LCX5a2_-yg0_fudfa65b9po6_HgPg2s1wOm64Bsz5VFt_O0FeXWFshFhLntKVcH8uvcPn6IB33C302-NEC7T_7nC7ty9HcXaKRy_d-7BE51WCFijJKYOoVlSk8s_06GYGubG7Ge0INLevOZwLyPbI0A_jVSawqJtaheUyrc4QlSvRA7FbIg-lEo24FubJTAXMHsirwhTC0o9vQbI36p2hdfwu9FFu-ZJw"
+    "id": "techno-chrono-ultra-titanium-smartwatch",
+    "title": "TECHNO Chrono Ultra Titanium Smartwatch",
+    "shortTitle": "Chrono Ultra Titanium",
+    "series": "TECHNO CHRONO",
+    "category": "Smartwatches",
+    "price": 349.0,
+    "compareAtPrice": 449.0,
+    "rating": 5.0,
+    "reviewCount": 142,
+    "isSale": true,
+    "isBestSeller": true,
+    "inStock": true,
+    "description": "Aerospace-grade Grade 5 titanium smartwatch with edge-to-edge Sapphire AMOLED display, dual-band GPS, medical-grade PPG biosensors, and 14-day battery longevity.",
+    "images": [
+      "images/smartwatch-ultra.jpg",
+      "images/smartwatch-sport.jpg"
     ],
-    variants: [
-      { name: "Matte White / Silver", hex: "#EAEAEA", imageIndex: 0 },
-      { name: "Stealth Black", hex: "#1A1A1A", imageIndex: 1 },
-      { name: "Space Gray", hex: "#7C7E83", imageIndex: 2 }
+    "variants": [
+      {
+        "name": "Natural Titanium",
+        "hex": "#9E9E9E",
+        "imageIndex": 0
+      },
+      {
+        "name": "Stealth DLC Black",
+        "hex": "#111111",
+        "imageIndex": 0
+      }
     ],
-    features: [
-      "Active Noise Cancellation (ANC) with Transparency Mode",
-      "Up to 40 Hours of Playback with Fast USB-C Quick Charge",
-      "Custom 40mm Hi-Res Audio Certified Titanium Drivers",
-      "Ergonomic Ultra-Plush Memory Foam Ear Cushions"
-    ],
-    specs: {
-      "Transducer Size": "40mm Custom High-Excursion Titanium",
-      "Frequency Response": "10Hz - 40,000Hz (Hi-Res Audio)",
-      "Noise Cancellation": "Hybrid ANC with 6 Adaptive Microphones",
-      "Impedance": "32 Ohms",
-      "Bluetooth Version": "Bluetooth 5.3 Multipoint",
-      "Battery Life": "40 Hours (ANC On) / 55 Hours (ANC Off)",
-      "Quick Charge": "10 mins = 5 Hours Playback",
-      "Weight": "248 grams"
-    }
-  },
-
-  // 2. TECH WATCH: CHRONO ULTRA TITANIUM
-  {
-    id: "techno-chrono-ultra-titanium-smartwatch",
-    title: "TECHNO Chrono Ultra Titanium Smartwatch",
-    shortTitle: "Chrono Ultra Watch",
-    series: "TECHNO CHRONO",
-    category: "Smartwatches",
-    price: 349.00,
-    compareAtPrice: 449.00,
-    rating: 5.0,
-    reviewCount: 96,
-    isSale: true,
-    isBestSeller: true,
-    inStock: true,
-    description: "Aerospace-grade Grade 5 titanium smartwatch with edge-to-edge Sapphire AMOLED display, dual-band GPS, medical-grade PPG biosensors, and 14-day battery longevity.",
-    images: [
-      "images/smartwatch-ultra.jpg"
-    ],
-    variants: [
-      { name: "Natural Titanium", hex: "#9E9E9E", imageIndex: 0 },
-      { name: "Stealth DLC Black", hex: "#111111", imageIndex: 0 }
-    ],
-    features: [
+    "features": [
       "Grade 5 Aerospace Titanium Unibody with Sapphire Crystal Glass",
       "1.43-inch Always-On AMOLED Retina Display (1,000 nits outdoor peak)",
       "14-Day Battery Life on a Single Fast Magnetic Charge",
       "10 ATM Water Resistance (100 meters dive & open-water swim rated)",
       "Dual-Frequency GPS (L1+L5) with Real-Time Turn-by-Turn Waypoints"
     ],
-    specs: {
+    "specs": {
       "Case Material": "Grade 5 Titanium with Micro-Blasted Matte Finish",
       "Display": "1.43\" Ultra-Retina Sapphire AMOLED (466x466, 326 PPI)",
       "Battery Life": "14 Days Typical Use / 36 Hours Continuous Dual-GPS",
       "Biosensors": "8-Channel PPG Optical Heart Rate, SpO2, ECG Sensor, Skin Temp",
       "Water Resistance": "100m / 10 ATM / MIL-STD-810H Certified",
       "Connectivity": "Bluetooth 5.3 BLE, Dual-Band GPS (L1+L5), NFC Contactless Pay",
-      "Dimensions & Weight": "46mm x 46mm x 12.1mm • 52 grams (without strap)"
-    }
+      "Dimensions & Weight": "46mm x 46mm x 12.1mm \u2022 52 grams (without strap)"
+    },
+    "inTheBox": [
+      "1x TECHNO Chrono Ultra Titanium Smartwatch",
+      "1x Magnetic Fast-Charging Puck (USB-C)",
+      "1x Grade 5 Titanium Link Bracelet + 1x Fluoroelastomer Sport Strap",
+      "1x Certificate of Authenticity & 2-Year International Warranty"
+    ]
   },
-
-  // 3. TECH WATCH: PULSE PRO CERAMIC SPORT WATCH
   {
-    id: "techno-pulse-pro-sport-smartwatch",
-    title: "TECHNO Pulse Pro Ceramic Sport Watch",
-    shortTitle: "Pulse Pro Sport",
-    series: "TECHNO CHRONO",
-    category: "Smartwatches",
-    price: 179.00,
-    compareAtPrice: 249.00,
-    rating: 4.8,
-    reviewCount: 71,
-    isSale: true,
-    isBestSeller: false,
-    inStock: true,
-    description: "Curved borderless OLED sport watch featuring high-temperature ceramic bezel, real-time VO2 Max tracking, apnea sleep analysis, and breathable fluoroelastomer loop strap.",
-    images: [
-      "images/smartwatch-sport.jpg"
+    "id": "techno-pulse-pro-sport-smartwatch",
+    "title": "TECHNO Pulse Pro Ceramic Sport Watch",
+    "shortTitle": "Pulse Pro Sport",
+    "series": "TECHNO CHRONO",
+    "category": "Smartwatches",
+    "price": 179.0,
+    "compareAtPrice": 249.0,
+    "rating": 4.8,
+    "reviewCount": 98,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "Curved borderless OLED sport watch featuring high-temperature ceramic bezel, real-time VO2 Max tracking, apnea sleep analysis, and breathable fluoroelastomer loop strap.",
+    "images": [
+      "images/smartwatch-sport.jpg",
+      "images/smartwatch-ultra.jpg"
     ],
-    variants: [
-      { name: "Onyx Black", hex: "#171717", imageIndex: 0 },
-      { name: "Glacier Cyan", hex: "#00E5FF", imageIndex: 0 }
+    "variants": [
+      {
+        "name": "Onyx Black",
+        "hex": "#171717",
+        "imageIndex": 0
+      },
+      {
+        "name": "Glacier Cyan",
+        "hex": "#00E5FF",
+        "imageIndex": 0
+      }
     ],
-    features: [
+    "features": [
       "Curved Borderless OLED Display with Neon Ambient Telemetry Rings",
       "VO2 Max, Lactate Threshold, and Real-Time Heart Rate Zone Alerts",
       "5 ATM Water Resistance with Automatic Lap Counting & Stroke Detection",
       "Featherweight 34g Ergonomic Aerodynamic Chassis"
     ],
-    specs: {
+    "specs": {
       "Case Material": "Zirconia Ceramic Bezel with Polycarbonate Subframe",
       "Display": "1.78\" Curved AMOLED (368x448, 800 nits)",
-      "Battery Life": "Up to 9 Days Normal / 24 Hours Sport Mode",
+      "Battery Life": "Up to 9 Days Normal / 24 Hours Continuous Sport Mode",
       "Sport Modes": "120+ Tracked Disciplines with Auto-Recognition",
+      "Biosensors": "PPG 4.0 BioTracker, Continuous SpO2, HRV Stress Monitor",
+      "Water Resistance": "5 ATM (50 meters swim proof)",
       "Weight": "34 grams ultra-balanced"
-    }
+    },
+    "inTheBox": [
+      "1x TECHNO Pulse Pro Ceramic Sport Watch",
+      "1x High-Tension Fluoroelastomer Sport Loop",
+      "1x Fast Magnetic USB-C Charging Cable",
+      "1x Quick Setup Guide & Warranty Card"
+    ]
   },
-
-  // 4. TECH HARDWARE: APEX 75 MECHANICAL KEYBOARD
   {
-    id: "techno-apex-75-mechanical-keyboard",
-    title: "TECHNO Apex 75 Low-Profile Mechanical Keyboard",
-    shortTitle: "Apex 75 Keyboard",
-    series: "DESK SERIES",
-    category: "Hardware & Peripherals",
-    price: 149.00,
-    compareAtPrice: 199.00,
-    rating: 4.9,
-    reviewCount: 88,
-    isSale: true,
-    isBestSeller: true,
-    inStock: true,
-    description: "CNC machined aluminum 75% wireless mechanical keyboard. Features hot-swappable low-profile switches, custom acoustic dampening pads, and 1000Hz polling rate.",
-    images: [
-      "images/keyboard-minimal.jpg"
+    "id": "techno-apex-stealth-tactical-watch",
+    "title": "TECHNO Apex Stealth Tactical GPS Watch",
+    "shortTitle": "Apex Stealth Tactical",
+    "series": "TECHNO CHRONO",
+    "category": "Smartwatches",
+    "price": 299.0,
+    "compareAtPrice": 399.0,
+    "rating": 4.9,
+    "reviewCount": 76,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "Engineered to MIL-STD-810H military standards with solar power harvesting, night vision compatibility, barometric storm alerts, and tactical stealth mode.",
+    "images": [
+      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=800&q=80",
+      "images/smartwatch-ultra.jpg"
     ],
-    variants: [
-      { name: "Space Gray Anodized", hex: "#4B5563", imageIndex: 0 },
-      { name: "Matte Obsidian", hex: "#111111", imageIndex: 0 }
+    "variants": [
+      {
+        "name": "Matte Tactical Black",
+        "hex": "#121212",
+        "imageIndex": 0
+      },
+      {
+        "name": "Desert Olive",
+        "hex": "#4B5320",
+        "imageIndex": 0
+      }
     ],
-    features: [
+    "features": [
+      "Solar Charging Glass Lens Extending Battery up to 30 Days in Field",
+      "Night Vision Goggle Compatible Backlight & Stealth Kill-Switch",
+      "Built-in 3-Axis Compass, Barometric Altimeter, and Gyroscope",
+      "Dual-Position Coordinate Formatting (MGRS & Lat/Long)"
+    ],
+    "specs": {
+      "Bezel Material": "Diamond-Like Carbon (DLC) Coated Titanium",
+      "Display": "1.4\" Sunlight-Visible Transflective Memory-in-Pixel",
+      "Battery Life": "30 Days with Solar Harvest / 48 Hours Full GPS",
+      "Durability": "MIL-STD-810H Thermal, Shock, and Water Resistance",
+      "Water Rating": "10 ATM / 100 meters",
+      "Sensors": "Barometric Altimeter, 3-Axis Compass, Pulse Ox, Thermometer",
+      "Weight": "58 grams"
+    },
+    "inTheBox": [
+      "1x TECHNO Apex Stealth Tactical Watch",
+      "1x Tactical Ballistic Nylon Quick-Release Strap",
+      "1x Heavy-Duty Braided Charging Cord",
+      "1x Tactical Field Manual"
+    ]
+  },
+  {
+    "id": "techno-horizon-sapphire-luxe-smartwatch",
+    "title": "TECHNO Horizon Sapphire Luxury Smartwatch",
+    "shortTitle": "Horizon Sapphire Luxe",
+    "series": "TECHNO CHRONO",
+    "category": "Smartwatches",
+    "price": 399.0,
+    "compareAtPrice": 499.0,
+    "rating": 5.0,
+    "reviewCount": 63,
+    "isSale": true,
+    "isBestSeller": true,
+    "inStock": true,
+    "description": "High horology meets silicon precision. Hand-polished 316L stainless steel case, genuine Italian leather strap, micro-crystal sapphire dome, and clinical ECG telemetry.",
+    "images": [
+      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80",
+      "images/smartwatch-ultra.jpg"
+    ],
+    "variants": [
+      {
+        "name": "Mirror Silver / Cognac Leather",
+        "hex": "#D1D5DB",
+        "imageIndex": 0
+      },
+      {
+        "name": "Midnight Obsidian / Black Leather",
+        "hex": "#1F2937",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Hand-Finished 316L Surgical Grade Stainless Steel Bezel",
+      "Domed Synthetic Sapphire Glass with Anti-Reflective Coating",
+      "Medical-Grade 1-Lead Electrocardiogram (ECG) with AFib Detection",
+      "Qi Wireless Fast Charging & Premium Charging Pedestal Included"
+    ],
+    "specs": {
+      "Case Material": "316L Stainless Steel with Mirror Polish",
+      "Display": "1.45\" Curved Sapphire AMOLED (480x480, 330 PPI)",
+      "Battery": "10 Days Daily Use / Wireless Fast Charge (100% in 45m)",
+      "Sensors": "Clinical ECG, Optical Heart Rate, SpO2, Skin Temperature",
+      "Water Resistance": "5 ATM (50 meters)",
+      "Strap": "22mm Italian Vegetable-Tanned Full-Grain Leather",
+      "Weight": "64 grams"
+    },
+    "inTheBox": [
+      "1x TECHNO Horizon Sapphire Luxury Smartwatch",
+      "1x Italian Leather Strap + 1x Matte Silicone Dress Strap",
+      "1x Brushed Metal Wireless Desktop Charging Dock",
+      "1x Leather Travel Case & Warranty Certificate"
+    ]
+  },
+  {
+    "id": "techno-carbon-chrono-diver-smartwatch",
+    "title": "TECHNO Carbon Chrono 200M Dive Smartwatch",
+    "shortTitle": "Carbon Chrono Diver",
+    "series": "TECHNO CHRONO",
+    "category": "Smartwatches",
+    "price": 329.0,
+    "compareAtPrice": 429.0,
+    "rating": 4.9,
+    "reviewCount": 54,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "Monocoque forged carbon fiber dive smartwatch certified to EN13319 standards. Features real-time depth gauge, ascent alarm, and luminescent digital diver dial.",
+    "images": [
+      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80",
+      "images/smartwatch-ultra.jpg"
+    ],
+    "variants": [
+      {
+        "name": "Forged Carbon Matte",
+        "hex": "#262626",
+        "imageIndex": 0
+      },
+      {
+        "name": "Oceanic Blue Carbon",
+        "hex": "#1E3A8A",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Forged Carbon Monocoque Case Impervious to Saltwater Corrosion",
+      "EN13319 Certified Dive Computer with Depth Gauge to 50 Meters",
+      "Ascent Rate Alarms and Surface Interval Safety Timers",
+      "High-Contrast AMOLED Diver Mode Readable at Extreme Depths"
+    ],
+    "specs": {
+      "Case Material": "Compression-Molded Forged Carbon Fiber",
+      "Display": "1.4\" High-Brightness Sunlight AMOLED (1200 nits)",
+      "Water Resistance": "20 ATM / 200 meters / EN13319 Dive Certified",
+      "Battery Life": "12 Days Smartwatch Mode / 30 Dive Logs per Charge",
+      "Sensors": "Hydrostatic Depth Sensor, Water Temp, Compass, SpO2",
+      "Weight": "49 grams feather-dense"
+    },
+    "inTheBox": [
+      "1x TECHNO Carbon Chrono Dive Smartwatch",
+      "1x Extra-Long Wetsuit Silicone Extension Strap",
+      "1x Magnetic Waterproof Charging Cable",
+      "1x Dive Log Quick Reference Guide"
+    ]
+  },
+  {
+    "id": "techno-aero-slim-active-watch",
+    "title": "TECHNO Aero Slim Ultra-Light Fitness Watch",
+    "shortTitle": "Aero Slim Active",
+    "series": "TECHNO CHRONO",
+    "category": "Smartwatches",
+    "price": 129.0,
+    "compareAtPrice": 179.0,
+    "rating": 4.7,
+    "reviewCount": 112,
+    "isSale": true,
+    "isBestSeller": true,
+    "inStock": true,
+    "description": "Weighing only 26 grams, the Aero Slim features a continuous health telemetry engine, 10-day battery life, and high-refresh 60Hz curved Retina display.",
+    "images": [
+      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=800&q=80",
+      "images/smartwatch-sport.jpg"
+    ],
+    "variants": [
+      {
+        "name": "Space Gray",
+        "hex": "#4B5563",
+        "imageIndex": 0
+      },
+      {
+        "name": "Rose Quartz",
+        "hex": "#F43F5E",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Featherweight 26g Chassis Designed for 24/7 Sleep Tracking",
+      "1.82\" Curved Borderless Retina Display with Smooth 60Hz Refresh",
+      "Personalized AI Sleep & Recovery Coach with HRV Monitoring",
+      "One-Tap Measurement of Heart Rate, SpO2, and Stress in 45 Seconds"
+    ],
+    "specs": {
+      "Case Material": "Aviation-Grade 6063 Anodized Aluminum Alloy",
+      "Display": "1.82\" AMOLED Retina (408x480, 347 PPI, 60Hz)",
+      "Battery Life": "10 Days Typical / 14 Days Battery Saver Mode",
+      "Sensors": "BioTracker 4.0 Optical Sensor, 3-Axis Accelerometer, Ambient Light",
+      "Water Resistance": "5 ATM (50 meters)",
+      "Weight": "26 grams without strap"
+    },
+    "inTheBox": [
+      "1x TECHNO Aero Slim Active Watch",
+      "1x Soft-Touch Breathable Silicone Band",
+      "1x Magnetic Charging Cable",
+      "1x Quick Start Guide"
+    ]
+  },
+  {
+    "id": "techno-quantum-matrix-solar-watch",
+    "title": "TECHNO Quantum Matrix Solar Smartwatch",
+    "shortTitle": "Quantum Matrix Solar",
+    "series": "TECHNO CHRONO",
+    "category": "Smartwatches",
+    "price": 279.0,
+    "compareAtPrice": 369.0,
+    "rating": 4.9,
+    "reviewCount": 49,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "Revolutionary dual-layer display system combining an ultra-low power sunlight display with vibrant OLED pixels. Integrated solar ring provides up to 45 days runtime.",
+    "images": [
+      "https://images.unsplash.com/photo-1544117518-30dd5ff7a986?auto=format&fit=crop&w=800&q=80",
+      "images/smartwatch-ultra.jpg"
+    ],
+    "variants": [
+      {
+        "name": "Dark Titanium",
+        "hex": "#374151",
+        "imageIndex": 0
+      },
+      {
+        "name": "Industrial Silver",
+        "hex": "#E5E7EB",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Dual-Layer Display Architecture (FSTN Screen + Vibrant Color AMOLED)",
+      "Continuous Solar Harvesting Ring Charges Under Sunlight & Indoor Light",
+      "45-Day Ultra Endurance Mode Without Wall Recharging",
+      "Multi-Satellite Global Positioning (GPS, GLONASS, Galileo, BeiDou)"
+    ],
+    "specs": {
+      "Bezel Material": "Sandblasted Grade 2 Titanium Bezel",
+      "Display": "Dual-Layer 1.4\" FSTN Always-On + 1.4\" AMOLED",
+      "Battery Life": "45 Days Dual-Display Mode / 72 Hours Continuous GPS",
+      "Satellite": "All-System GNSS with Route Back Track Navigation",
+      "Water Resistance": "10 ATM / 100 meters",
+      "Weight": "51 grams"
+    },
+    "inTheBox": [
+      "1x TECHNO Quantum Matrix Solar Watch",
+      "1x Rugged Hybrid Leather-Silicone Strap",
+      "1x Fast Snap Charging Cord",
+      "1x TECHNO Expedition Manual"
+    ]
+  },
+  {
+    "id": "techno-vanguard-esim-lte-smartwatch",
+    "title": "TECHNO Vanguard eSIM LTE Smartwatch",
+    "shortTitle": "Vanguard 4G LTE",
+    "series": "TECHNO CHRONO",
+    "category": "Smartwatches",
+    "price": 369.0,
+    "compareAtPrice": 479.0,
+    "rating": 4.8,
+    "reviewCount": 85,
+    "isSale": true,
+    "isBestSeller": true,
+    "inStock": true,
+    "description": "Untether from your phone. Autonomous 4G LTE cellular connectivity with built-in speaker, beamforming microphone, NFC payments, and Spotify streaming.",
+    "images": [
+      "https://images.unsplash.com/photo-1510017803434-a899398421b3?auto=format&fit=crop&w=800&q=80",
+      "images/smartwatch-ultra.jpg"
+    ],
+    "variants": [
+      {
+        "name": "Stealth Obsidian",
+        "hex": "#111827",
+        "imageIndex": 0
+      },
+      {
+        "name": "Polar White Ceramic",
+        "hex": "#F3F4F6",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Autonomous eSIM 4G LTE Connectivity for Independent Phone Calls & SMS",
+      "Stream Offline Audio Directly to Bluetooth Headphones",
+      "Contactless NFC Payments via TECHNO Pay Global Gateway",
+      "Dual HD Microphones with AI Noise Suppression for Clear Wrist Calls"
+    ],
+    "specs": {
+      "Connectivity": "4G LTE Standalone eSIM, Wi-Fi 2.4/5GHz, Bluetooth 5.3, NFC",
+      "Display": "1.43\" Super AMOLED (466x466, 326 PPI, Always-On)",
+      "Storage": "32GB High-Speed Flash Memory for Apps & Audio",
+      "Battery Life": "5 Days Smart Mode / 48 Hours Heavy LTE Usage",
+      "Water Rating": "5 ATM Water Resistance",
+      "Weight": "54 grams"
+    },
+    "inTheBox": [
+      "1x TECHNO Vanguard eSIM LTE Smartwatch",
+      "1x Quick Release Matte Silicone Strap",
+      "1x Magnetic Charging Stand",
+      "1x eSIM Activation Guide"
+    ]
+  },
+  {
+    "id": "techno-nordic-minimalist-hybrid-watch",
+    "title": "TECHNO Nordic Minimalist Hybrid Timepiece",
+    "shortTitle": "Nordic Hybrid Watch",
+    "series": "TECHNO CHRONO",
+    "category": "Smartwatches",
+    "price": 199.0,
+    "compareAtPrice": 269.0,
+    "rating": 4.9,
+    "reviewCount": 42,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "Authentic mechanical watch hands over a discreet hidden sub-dial OLED display. Clean Scandinavian aesthetics with silent haptic notification rhythms and 30-day battery.",
+    "images": [
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80",
+      "images/smartwatch-ultra.jpg"
+    ],
+    "variants": [
+      {
+        "name": "Brushed Steel / Black Dial",
+        "hex": "#9CA3AF",
+        "imageIndex": 0
+      },
+      {
+        "name": "Matte Black / Charcoal Dial",
+        "hex": "#18181B",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Real Mechanical Analog Hands with Dynamic Digital Sub-Display",
+      "Silent Haptic Motor for VIP Caller & Calendar Alerts",
+      "30-Day Battery Longevity on a Single 60-Minute Charge",
+      "Curved Domed Mineral Glass with Scratch-Resistant Sapphire Coating"
+    ],
+    "specs": {
+      "Chassis": "316L Stainless Steel with Fine Satin Brushed Finish",
+      "Display": "Mechanical Analog Hands + Discreet 0.69\" Micro-OLED",
+      "Battery": "30 Days Typical Smart Use",
+      "Sensors": "Optical Heart Rate Sensor, Step Counter, Sleep Stage Analysis",
+      "Water Resistance": "5 ATM (50 meters)",
+      "Dimensions": "42mm Diameter x 11.2mm Thickness \u2022 46 grams"
+    },
+    "inTheBox": [
+      "1x TECHNO Nordic Minimalist Hybrid Timepiece",
+      "1x Milanese Mesh Stainless Steel Band",
+      "1x Fast USB-C Magnetic Charger",
+      "1x Presentation Gift Box & Warranty"
+    ]
+  },
+  {
+    "id": "techno-enduro-solar-expedition-watch",
+    "title": "TECHNO Enduro Solar Expedition GPS Watch",
+    "shortTitle": "Enduro Solar Expedition",
+    "series": "TECHNO CHRONO",
+    "category": "Smartwatches",
+    "price": 389.0,
+    "compareAtPrice": 499.0,
+    "rating": 5.0,
+    "reviewCount": 68,
+    "isSale": true,
+    "isBestSeller": true,
+    "inStock": true,
+    "description": "Engineered for extreme continental expeditions. Preloaded offline topographic maps, titanium bezel, solar glass, and up to 60 days continuous GPS expedition battery mode.",
+    "images": [
+      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+      "images/smartwatch-ultra.jpg"
+    ],
+    "variants": [
+      {
+        "name": "Raw Titanium",
+        "hex": "#71717A",
+        "imageIndex": 0
+      },
+      {
+        "name": "Graphite DLC",
+        "hex": "#27272A",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Preloaded Worldwide Color Topographic Maps with Elevation Contours",
+      "Solar Power Sapphire Glass Providing Infinite Expedition Battery Life",
+      "NextFork Trail Guidance and ClimbPro Real-Time Ascent Analysis",
+      "Dual-Band SatIQ GPS Technology for Optimal Satellite Positioning"
+    ],
+    "specs": {
+      "Bezel": "DLC Titanium with Reinforced Polymer Core",
+      "Display": "1.4\" Transflective Memory-in-Pixel (Sunlight Visible)",
+      "Battery": "Up to 60 Days in Expedition Mode / 150 Hours Max GPS with Solar",
+      "Mapping": "32GB Offline Multi-Continent TopoActive Maps",
+      "Water Rating": "10 ATM / 100 meters dive tested",
+      "Weight": "61 grams"
+    },
+    "inTheBox": [
+      "1x TECHNO Enduro Solar Expedition GPS Watch",
+      "1x UltraFit Elastic Lightweight Nylon Band",
+      "1x High-Durability Braided Charging Cable",
+      "1x Topo Navigation Quick Guide"
+    ]
+  },
+  {
+    "id": "techno-wireless-noise-cancelling-headphones-pro",
+    "title": "TECHNO Wireless Noise-Cancelling Headphones Pro",
+    "shortTitle": "Wireless Pro",
+    "series": "TECHNO SERIES X",
+    "category": "Headphones",
+    "price": 199.0,
+    "compareAtPrice": 299.0,
+    "rating": 4.9,
+    "reviewCount": 184,
+    "isSale": true,
+    "isBestSeller": true,
+    "inStock": true,
+    "description": "Engineered for supreme acoustic fidelity with personalized Spatial Audio, adaptive ANC, and unmatched 40-hour wireless playtime. Precision crafted in lightweight matte composite.",
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAhzeAfkVnIFbTvX5yZrgkk251E9hSCkp2M3Tn1tOYXoiXBjmcMpqf-hgPIOxHC_e1AyLBA4CoNA1K75G0w001pXRLWovNJbkjW-wiOPU8aL5Afplz6EY8pv-IIGA83yrunIDWXxvwOzxj_62ipNjL6N8CLb-pNQBP1tnJl84S7XOF7n76FfWn2mtgFxafWH6xPMJFSq0_goaPS-xc1_xxKgnoB36GO60vykpjbi3M7",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuBrw64PfO2ZJcgO6xZlxLTltn4NcpGdeSPmraI5we3gxeShHtODAJB4y_RwUBtNPAQ4H5EkejyBwYLUgrlc4QieHFUBSdbJwShmaTsDD1DvdccQw-nvL6EBgI5PYejr4HWrXXEbPnk6_qi3Jxl_clEJkAvrTaAb0Nowxnb3-tGJ0LfgS681seampXxeohmYe9ICOcPYl3gAN-5lHg8eqLyCY35mC-WTSaTW8rz2qe3G"
+    ],
+    "variants": [
+      {
+        "name": "Matte White / Silver",
+        "hex": "#EAEAEA",
+        "imageIndex": 0
+      },
+      {
+        "name": "Stealth Black",
+        "hex": "#1A1A1A",
+        "imageIndex": 1
+      }
+    ],
+    "features": [
+      "Active Noise Cancellation (ANC) with Transparency Mode",
+      "Up to 40 Hours of Playback with Fast USB-C Quick Charge",
+      "Custom 40mm Hi-Res Audio Certified Titanium Drivers",
+      "Ergonomic Ultra-Plush Memory Foam Ear Cushions"
+    ],
+    "specs": {
+      "Transducer Size": "40mm Custom High-Excursion Titanium",
+      "Frequency Response": "10Hz - 40,000Hz (Hi-Res Certified)",
+      "Noise Cancellation": "Hybrid ANC with 6 Adaptive Microphones",
+      "Bluetooth": "Bluetooth 5.3 Multipoint & LDAC High-Res",
+      "Battery Life": "40 Hours (ANC On) / 55 Hours (ANC Off)",
+      "Quick Charge": "10 mins = 5 Hours Playback",
+      "Weight": "248 grams"
+    },
+    "inTheBox": [
+      "1x TECHNO Wireless Pro Headphones",
+      "1x Protective Magnetic Travel Case",
+      "1x 3.5mm Gold-Plated Audio Cable",
+      "1x USB-C Fast-Charging Braided Cable"
+    ]
+  },
+  {
+    "id": "techno-studio-air-open-back-monitor",
+    "title": "TECHNO Studio Air Open-Back Reference Monitor",
+    "shortTitle": "Studio Air Open-Back",
+    "series": "TECHNO SERIES X",
+    "category": "Headphones",
+    "price": 249.0,
+    "compareAtPrice": 349.0,
+    "rating": 5.0,
+    "reviewCount": 92,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "50mm planar magnetic acoustic transducers in an open-back aluminum mesh chamber. Delivers surgical mastering accuracy, zero inner-ear pressure, and limitless soundstage.",
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuDkIbnZpshtyNmE0iWr11pFI9uPaRi-kEOabvsUs72354KDYfTp1dn3EoOzyRXJC1rdgrte2w_yyY-BQU8ecXDdDZKaMQuAyEDshaDka0Lp_wR9oUdEeKnCgftMEpn90K-xuUEshlcNEjenK-opYcwE8-DmRv7BTuAYRnYx1NbSjTtRpd1Cq56mSljRxIxnCX_bH8QExJE2Su0wkKA-yybhGgdBrM3r65GZuaO0m9kP",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80"
+    ],
+    "variants": [
+      {
+        "name": "Anodized Silver Mesh",
+        "hex": "#D1D5DB",
+        "imageIndex": 0
+      },
+      {
+        "name": "Matte Obsidian",
+        "hex": "#1F2937",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Custom 50mm Planar Magnetic Diaphragms with Neodymium Stator Array",
+      "Acoustically Transparent Open-Back Honeycomb Stainless Steel Grille",
+      "Zero Fatigue Ultra-Breathable Velour Memory Foam Ear Cushions",
+      "Dual-Entry Detachable Silver-Plated OFC Audiophile Cable"
+    ],
+    "specs": {
+      "Driver Type": "50mm Planar Magnetic Ultra-Thin Diaphragm",
+      "Acoustic Design": "Open-Back Circumaural",
+      "Frequency Response": "5Hz - 50,000Hz Audiophile Grade",
+      "Total Harmonic Distortion": "< 0.05% at 1kHz, 100dB SPL",
+      "Impedance": "38 Ohms",
+      "Weight": "285 grams"
+    },
+    "inTheBox": [
+      "1x TECHNO Studio Air Reference Headphones",
+      "1x 2.5m Silver-Plated OFC 3.5mm Cable",
+      "1x 6.35mm (1/4\") Gold-Plated Studio Adapter",
+      "1x Aluminum Desktop Display Headphone Stand"
+    ]
+  },
+  {
+    "id": "techno-studio-anc-plus-edition",
+    "title": "TECHNO Studio ANC+ Spatial Audio Headphones",
+    "shortTitle": "Studio ANC+ Edition",
+    "series": "TECHNO SERIES X",
+    "category": "Headphones",
+    "price": 279.0,
+    "compareAtPrice": 369.0,
+    "rating": 4.9,
+    "reviewCount": 118,
+    "isSale": true,
+    "isBestSeller": true,
+    "inStock": true,
+    "description": "Dynamic head-tracking 3D spatial acoustics with custom carbon-fiber acoustic chambers, room calibration microphones, and 50-hour battery longevity.",
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAKWiKmrwGyImiWkFAT7Tdxt5p-2WkIBkhmGU5rlKvXSTDY8bbjfVYiTlvgiXd29K_QC-dwOtTGrWvUGlMSvhrkjQIgRBQSNLtN4AHkJ4an_pNiLx_tDh4rzyBbQWtTWNuYZ3eKM_AlD-uYeNxM2lHcgcFWntbBfFx8SEouDY4iTlrG7TQ3L5Eqskr6gNUJGDS6gzdscy61JtajMeOuArDJU8rYFtNgf4GztsIZAqSM",
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=800&q=80"
+    ],
+    "variants": [
+      {
+        "name": "Carbon Weave Black",
+        "hex": "#18181B",
+        "imageIndex": 0
+      },
+      {
+        "name": "Space Titanium",
+        "hex": "#71717A",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Real-Time Spatial Audio with Dynamic 6-Axis Gyroscopic Head Tracking",
+      "Carbon Fiber Enclosure Dampening Resonances for Micro-Detail Clarity",
+      "Lossless LDAC 990kbps Transmission and USB-C 24-bit/96kHz DAC",
+      "50-Hour Extended Battery Life with Quick Charge"
+    ],
+    "specs": {
+      "Acoustic Chambers": "Multi-Layered Real Carbon Fiber Composite",
+      "Drivers": "45mm Carbon Bio-Cellulose Dome Drivers",
+      "ANC Performance": "Adaptive Hybrid ANC up to 45dB Noise Reduction",
+      "Bluetooth": "Bluetooth 5.3 with LDAC, AAC, SBC, aptX Adaptive",
+      "Battery": "50 Hours Playtime / 15m Charge = 8 Hours",
+      "Weight": "260 grams"
+    },
+    "inTheBox": [
+      "1x TECHNO Studio ANC+ Headphones",
+      "1x Hard Shell Molded Storage Case",
+      "1x High-Resolution USB-C Audio Cable (Lossless DAC)",
+      "1x 3.5mm Braided Auxiliary Cable"
+    ]
+  },
+  {
+    "id": "techno-carbon-master-audiophile-headphone",
+    "title": "TECHNO Carbon Master Audiophile Headphones",
+    "shortTitle": "Carbon Master Audiophile",
+    "series": "TECHNO SERIES X",
+    "category": "Headphones",
+    "price": 389.0,
+    "compareAtPrice": 499.0,
+    "rating": 5.0,
+    "reviewCount": 47,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "The pinnacle of acoustic engineering. Real forged carbon fiber earcups, 50mm pure beryllium-coated drivers, balanced 4.4mm pentaconn connectivity, and plush Alcantara padding.",
+    "images": [
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=800&q=80"
+    ],
+    "variants": [
+      {
+        "name": "Forged Marble Carbon",
+        "hex": "#171717",
+        "imageIndex": 0
+      },
+      {
+        "name": "Matte Slate Carbon",
+        "hex": "#3F3F46",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "50mm Pure Beryllium-Coated Diaphragms for Instantaneous Transient Speed",
+      "Solid Forged Carbon Acoustic Resonators CNC Milled from Solid Blocks",
+      "Dual Balanced 4.4mm Pentaconn + 3.5mm OFC Silver-Litz Wiring",
+      "Italian Alcantara Memory Foam Cushions for Supreme Comfort"
+    ],
+    "specs": {
+      "Transducer": "50mm Beryllium Deposited Ultra-Rigid Diaphragm",
+      "Acoustic Enclosure": "Forged Carbon Fiber with Anti-Standing Wave Geometry",
+      "Frequency Response": "4Hz - 52,000Hz Master Reference",
+      "Impedance": "32 Ohms (Easily Driven by DAPs or Phones)",
+      "Cables": "Interchangeable 4.4mm Balanced + 3.5mm Unbalanced Litz Cables",
+      "Weight": "295 grams"
+    },
+    "inTheBox": [
+      "1x TECHNO Carbon Master Audiophile Headphones",
+      "1x 4.4mm Balanced Silver-Plated Cable (1.8m)",
+      "1x 3.5mm Single-Ended Audiophile Cable (1.8m)",
+      "1x Handcrafted Hardwood & Leather Vault Case"
+    ]
+  },
+  {
+    "id": "techno-quiet-commute-anc-headphones",
+    "title": "TECHNO QuietCommute Ultra-Comfort ANC Headphones",
+    "shortTitle": "QuietCommute ANC",
+    "series": "TECHNO SERIES X",
+    "category": "Headphones",
+    "price": 159.0,
+    "compareAtPrice": 219.0,
+    "rating": 4.8,
+    "reviewCount": 139,
+    "isSale": true,
+    "isBestSeller": true,
+    "inStock": true,
+    "description": "Engineered for subway, airplane, and open-office commuters. Delivers 45dB noise suppression, zero clamping pressure headband, and massive 60-hour runtime.",
+    "images": [
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=800&q=80",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAhzeAfkVnIFbTvX5yZrgkk251E9hSCkp2M3Tn1tOYXoiXBjmcMpqf-hgPIOxHC_e1AyLBA4CoNA1K75G0w001pXRLWovNJbkjW-wiOPU8aL5Afplz6EY8pv-IIGA83yrunIDWXxvwOzxj_62ipNjL6N8CLb-pNQBP1tnJl84S7XOF7n76FfWn2mtgFxafWH6xPMJFSq0_goaPS-xc1_xxKgnoB36GO60vykpjbi3M7"
+    ],
+    "variants": [
+      {
+        "name": "Stealth Charcoal",
+        "hex": "#27272A",
+        "imageIndex": 0
+      },
+      {
+        "name": "Nordic Cream",
+        "hex": "#F4F4F5",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "45dB Active Noise Cancellation Targeting Low-Frequency Engine Drone",
+      "Zero Clamping Force Memory Headband for 12-Hour Continuous Wearing",
+      "60-Hour Industry-Leading Battery Life with Fast Charge",
+      "Fold-Flat Dual-Axis Swivel Mechanism for Compact Bag Storage"
+    ],
+    "specs": {
+      "Drivers": "40mm Custom Neodymium Dynamic Drivers",
+      "Battery Life": "60 Hours (ANC On) / 75 Hours (ANC Off)",
+      "Noise Cancellation": "Dual-Feedforward + Feedback Hybrid ANC",
+      "Connectivity": "Bluetooth 5.3 Multipoint Dual-Device Pairing",
+      "Weight": "220 grams Featherweight Over-Ear"
+    },
+    "inTheBox": [
+      "1x TECHNO QuietCommute ANC Headphones",
+      "1x Compact Slim Travel Case",
+      "1x Airplane Dual-Prong Audio Adapter",
+      "1x Fast Charging USB-C Cable"
+    ]
+  },
+  {
+    "id": "techno-voyager-foldable-travel-headphones",
+    "title": "TECHNO Voyager Wireless Travel Headphones",
+    "shortTitle": "Voyager Travel Audio",
+    "series": "TECHNO SERIES X",
+    "category": "Headphones",
+    "price": 139.0,
+    "compareAtPrice": 189.0,
+    "rating": 4.7,
+    "reviewCount": 94,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "Reinforced steel dual-hinge folding headphones with soft protein leather earcups, ambient noise filtration, and 45-hour transatlantic flight endurance.",
+    "images": [
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=800&q=80",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuBrw64PfO2ZJcgO6xZlxLTltn4NcpGdeSPmraI5we3gxeShHtODAJB4y_RwUBtNPAQ4H5EkejyBwYLUgrlc4QieHFUBSdbJwShmaTsDD1DvdccQw-nvL6EBgI5PYejr4HWrXXEbPnk6_qi3Jxl_clEJkAvrTaAb0Nowxnb3-tGJ0LfgS681seampXxeohmYe9ICOcPYl3gAN-5lHg8eqLyCY35mC-WTSaTW8rz2qe3G"
+    ],
+    "variants": [
+      {
+        "name": "Matte Jet Black",
+        "hex": "#18181B",
+        "imageIndex": 0
+      },
+      {
+        "name": "Steel Blue",
+        "hex": "#334155",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Ultra-Compact Dual-Hinge Mechanism Collapses Down to Pocket Size",
+      "Protein Leather Cloud Cushions with Passive Sound Isolation",
+      "45-Hour Battery Runtime with 5-Minute Quick Emergency Charge",
+      "Integrated Flight Microphone Array for In-Transit Voice Calls"
+    ],
+    "specs": {
+      "Acoustics": "40mm Bio-Cellulose Composite Drivers",
+      "Battery": "45 Hours Wireless Playback",
+      "Microphones": "Quad Environmental Noise Cancelling Mics",
+      "Weight": "215 grams Ultra-Portable"
+    },
+    "inTheBox": [
+      "1x TECHNO Voyager Wireless Travel Headphones",
+      "1x Ballistic Nylon Carrying Case with Carabiner",
+      "1x Gold-Plated 3.5mm Aux Cable",
+      "1x USB-C Recharging Cable"
+    ]
+  },
+  {
+    "id": "techno-cyberacoustic-24g-gaming-headset",
+    "title": "TECHNO CyberAcoustic 2.4G Low-Latency Headset",
+    "shortTitle": "CyberAcoustic Headset",
+    "series": "TECHNO SERIES X",
+    "category": "Headphones",
+    "price": 169.0,
+    "compareAtPrice": 229.0,
+    "rating": 4.9,
+    "reviewCount": 115,
+    "isSale": true,
+    "isBestSeller": true,
+    "inStock": true,
+    "description": "Ultra-low latency 15ms wireless gaming headset with detachable broadcast-grade cardioid condenser mic, 7.1 positional surround sound, and cool-gel earcups.",
+    "images": [
+      "https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?auto=format&fit=crop&w=800&q=80",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAKWiKmrwGyImiWkFAT7Tdxt5p-2WkIBkhmGU5rlKvXSTDY8bbjfVYiTlvgiXd29K_QC-dwOtTGrWvUGlMSvhrkjQIgRBQSNLtN4AHkJ4an_pNiLx_tDh4rzyBbQWtTWNuYZ3eKM_AlD-uYeNxM2lHcgcFWntbBfFx8SEouDY4iTlrG7TQ3L5Eqskr6gNUJGDS6gzdscy61JtajMeOuArDJU8rYFtNgf4GztsIZAqSM"
+    ],
+    "variants": [
+      {
+        "name": "Cyber Black",
+        "hex": "#111827",
+        "imageIndex": 0
+      },
+      {
+        "name": "Neon Accent Edition",
+        "hex": "#06B6D4",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "15ms Ultra-Low Latency via Included 2.4GHz USB-C Wireless Dongle",
+      "Detachable 9.7mm Broadcast-Grade Cardioid Condenser Microphone",
+      "7.1 Positional Spatial Surround Sound Engine for Precise Footsteps",
+      "Dual-Layer Cooling-Gel Infused Memory Foam Ear Cushions"
+    ],
+    "specs": {
+      "Drivers": "50mm High-Flux Neodymium Drivers with Graphene Diaphragm",
+      "Wireless": "2.4GHz Lossless Wireless (15ms) + Bluetooth 5.3 + 3.5mm",
+      "Microphone": "Detachable 9.7mm Supercardioid Boom Mic with Pop Filter",
+      "Battery": "40 Hours Non-Stop Gaming Session Runtime",
+      "Weight": "275 grams"
+    },
+    "inTheBox": [
+      "1x TECHNO CyberAcoustic Gaming Headset",
+      "1x 2.4GHz Ultra-Low Latency USB-C Wireless Dongle",
+      "1x USB-A to USB-C Dongle Adapter",
+      "1x Detachable Boom Microphone with Foam Pop Windscreen"
+    ]
+  },
+  {
+    "id": "techno-element-natural-walnut-hi-fi",
+    "title": "TECHNO Element Natural Walnut Hi-Fi Headphones",
+    "shortTitle": "Element Walnut Hi-Fi",
+    "series": "TECHNO SERIES X",
+    "category": "Headphones",
+    "price": 219.0,
+    "compareAtPrice": 299.0,
+    "rating": 4.9,
+    "reviewCount": 61,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "Acoustic chambers carved from real American black walnut. Imparts an organic, natural warmth and harmonic resonance impossible to replicate in plastic.",
+    "images": [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=800&q=80"
+    ],
+    "variants": [
+      {
+        "name": "Solid Walnut & Matte Gold",
+        "hex": "#78350F",
+        "imageIndex": 0
+      },
+      {
+        "name": "Dark Ebony & Gunmetal",
+        "hex": "#1C1917",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Real American Black Walnut Earcups Precision CNC Milled by Artisans",
+      "Warm Organic Sound Signature with Euphonic Acoustic Resonance",
+      "Dual 50mm Titanium-Coated Dynamic Transducers",
+      "Braided Tangle-Free Cotton Covered Detachable Audiophile Cable"
+    ],
+    "specs": {
+      "Earcups": "100% Solid Certified American Walnut Wood",
+      "Drivers": "50mm Dynamic Titanium Mylar Drivers",
+      "Frequency Response": "12Hz - 38,000Hz Warm Hi-Res",
+      "Impedance": "32 Ohms",
+      "Connectivity": "Detachable 3.5mm Dual Input + Wireless Bluetooth 5.3",
+      "Weight": "290 grams"
+    },
+    "inTheBox": [
+      "1x TECHNO Element Walnut Headphones",
+      "1x 1.8m Braided Fabric 3.5mm Audio Cable",
+      "1x 6.35mm Gold-Plated Studio Adapter",
+      "1x Canvas Drawstring Storage Sack"
+    ]
+  },
+  {
+    "id": "techno-modular-pro-dj-swivel-headphones",
+    "title": "TECHNO Modular Pro DJ Swivel Headphones",
+    "shortTitle": "Modular Pro DJ",
+    "series": "TECHNO SERIES X",
+    "category": "Headphones",
+    "price": 189.0,
+    "compareAtPrice": 259.0,
+    "rating": 4.8,
+    "reviewCount": 73,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "Built for club booths and live performance. 90-degree reversible swivel cups for one-ear monitoring, high SPL 112dB handling, and locking coiled studio cable.",
+    "images": [
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=800&q=80",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAhzeAfkVnIFbTvX5yZrgkk251E9hSCkp2M3Tn1tOYXoiXBjmcMpqf-hgPIOxHC_e1AyLBA4CoNA1K75G0w001pXRLWovNJbkjW-wiOPU8aL5Afplz6EY8pv-IIGA83yrunIDWXxvwOzxj_62ipNjL6N8CLb-pNQBP1tnJl84S7XOF7n76FfWn2mtgFxafWH6xPMJFSq0_goaPS-xc1_xxKgnoB36GO60vykpjbi3M7"
+    ],
+    "variants": [
+      {
+        "name": "DJ Stealth Black",
+        "hex": "#09090B",
+        "imageIndex": 0
+      },
+      {
+        "name": "Chrome DJ Edition",
+        "hex": "#E4E4E7",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "90-Degree Reversible Swivel Earcups for Seamless Shoulder Cueing",
+      "High Sound Pressure Level (112dB SPL) with Zero Bass Distortion",
+      "Detachable 3-Meter Heavy-Duty Coiled Cable with Twist-Lock Connector",
+      "Modular Component Design with Replaceable Headband and Cushions"
+    ],
+    "specs": {
+      "Drivers": "40mm High-Output Neodymium Magnet Drivers",
+      "Max Power Input": "2,000 mW (Club Ready)",
+      "Frequency Response": "8Hz - 32,000Hz Punchy Sub-Bass",
+      "Cable": "3-Meter Coiled Studio Cable with Screw-on 6.35mm Adapter",
+      "Weight": "265 grams"
+    },
+    "inTheBox": [
+      "1x TECHNO Modular Pro DJ Headphones",
+      "1x 3m Coiled Heavy-Duty Locking Audio Cable",
+      "1x 1.2m Straight Audio Cable with In-Line Mic",
+      "1x Screw-on 6.35mm Gold Studio Plug"
+    ]
+  },
+  {
+    "id": "techno-broadcast-one-studio-monitoring-headset",
+    "title": "TECHNO Broadcast One Studio Monitoring Headset",
+    "shortTitle": "Broadcast One Studio",
+    "series": "TECHNO SERIES X",
+    "category": "Headphones",
+    "price": 179.0,
+    "compareAtPrice": 239.0,
+    "rating": 4.9,
+    "reviewCount": 83,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "Flat, neutral reference response curve tailored for audio engineers, podcasters, and broadcasters. Includes flip-to-mute cardioid voice mic and daisy-chain audio sharing.",
+    "images": [
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=800&q=80",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuDkIbnZpshtyNmE0iWr11pFI9uPaRi-kEOabvsUs72354KDYfTp1dn3EoOzyRXJC1rdgrte2w_yyY-BQU8ecXDdDZKaMQuAyEDshaDka0Lp_wR9oUdEeKnCgftMEpn90K-xuUEshlcNEjenK-opYcwE8-DmRv7BTuAYRnYx1NbSjTtRpd1Cq56mSljRxIxnCX_bH8QExJE2Su0wkKA-yybhGgdBrM3r65GZuaO0m9kP"
+    ],
+    "variants": [
+      {
+        "name": "Studio Matte Gray",
+        "hex": "#4B5563",
+        "imageIndex": 0
+      },
+      {
+        "name": "Classic Matte Black",
+        "hex": "#1F2937",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Ruler-Flat Neutral Frequency Curve for Honest Audio Monitoring",
+      "Flip-Up-To-Mute Professional Cardioid Broadcast Microphone",
+      "Daisy-Chain 3.5mm Port for Instant Audio Sharing in Studio",
+      "Replaceable High-Density Acoustic Memory Foam Ear Pads"
+    ],
+    "specs": {
+      "Drivers": "45mm Custom Mylar Reference Drivers",
+      "Frequency Response": "10Hz - 35,000Hz Reference Standard",
+      "Microphone": "Cardioid Polar Pattern Electret Condenser (50Hz - 16kHz)",
+      "Connectivity": "3.5mm TRRS Studio Input + Dual Daisy-Chain Jack",
+      "Weight": "255 grams"
+    },
+    "inTheBox": [
+      "1x TECHNO Broadcast One Studio Monitoring Headset",
+      "1x Detachable Boom Mic with Foam Filter",
+      "1x Dual 3.5mm PC Y-Splitter Cable",
+      "1x Molded Protective Travel Sleeve"
+    ]
+  },
+  {
+    "id": "techno-aero-pods-pro-gen2-anc",
+    "title": "TECHNO Aero Pods Pro Gen 2 ANC Earbuds",
+    "shortTitle": "Aero Pods Pro Gen 2",
+    "series": "AERO SERIES",
+    "category": "Airbuds",
+    "price": 149.0,
+    "compareAtPrice": 199.0,
+    "rating": 5.0,
+    "reviewCount": 215,
+    "isSale": true,
+    "isBestSeller": true,
+    "inStock": true,
+    "description": "Next-generation true wireless earbuds with dual-driver acoustic architecture, 42dB smart adaptive ANC, dynamic head-tracking spatial audio, and Qi wireless charging case.",
+    "images": [
+      "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=800&q=80"
+    ],
+    "variants": [
+      {
+        "name": "Glacier White",
+        "hex": "#F8FAFC",
+        "imageIndex": 0
+      },
+      {
+        "name": "Space Gray Matte",
+        "hex": "#334155",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Dual-Driver Acoustic System (11mm Sub-Bass Woofer + Micro Tweeter)",
+      "42dB Adaptive Noise Cancellation with Auto Environmental Sensing",
+      "3D Spatial Audio with Dynamic Real-Time Head Tracking",
+      "Qi Wireless & MagSafe Fast-Charging Aluminum-Hinged Case"
+    ],
+    "specs": {
+      "Drivers": "11mm Liquid Crystal Polymer + Balanced Micro-Tweeter",
+      "Battery Life": "8.5 Hours Single Charge / 36 Hours with Charging Case",
+      "Noise Cancellation": "Adaptive Smart Hybrid ANC up to 42dB",
+      "Water Rating": "IPX5 Water & Sweat Resistance",
+      "Codecs": "LDAC, AAC, SBC, aptX Adaptive",
+      "Weight": "4.2 grams per bud \u2022 46g charging case"
+    },
+    "inTheBox": [
+      "2x TECHNO Aero Pods Pro Earbuds (L/R)",
+      "1x Wireless Fast-Charging Protective Case",
+      "4x Pairs Ergonomic Silicone Ear Tips (XS, S, M, L)",
+      "1x Braided USB-C Fast Charging Cable"
+    ]
+  },
+  {
+    "id": "techno-nano-buds-ultra-stealth-earbuds",
+    "title": "TECHNO Nano Buds Ultra-Mini Stealth Earbuds",
+    "shortTitle": "Nano Buds Stealth",
+    "series": "AERO SERIES",
+    "category": "Airbuds",
+    "price": 89.0,
+    "compareAtPrice": 129.0,
+    "rating": 4.8,
+    "reviewCount": 167,
+    "isSale": true,
+    "isBestSeller": true,
+    "inStock": true,
+    "description": "The world's most compact wireless earbuds. Flush in-concha zero-protrusion profile allows comfortable side-sleeping while delivering surprisingly punchy Hi-Fi sound.",
+    "images": [
+      "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=800&q=80"
+    ],
+    "variants": [
+      {
+        "name": "Stealth Black",
+        "hex": "#18181B",
+        "imageIndex": 0
+      },
+      {
+        "name": "Nude Beige",
+        "hex": "#E7E5E4",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Ultra-Low Profile 3.2g Flush Fit Design for Pillow & Side Sleep Comfort",
+      "Passive Noise Blocking (-28dB) Without Ear Canal Pressure Fatigue",
+      "Built-In Soothing Sound Machine Presets (White Noise, Rain, Waves)",
+      "Pocketable Micro Capsule Charging Case"
+    ],
+    "specs": {
+      "Driver": "6mm Custom Micro Dynamic Driver",
+      "Form Factor": "Ultra-Miniature Flush Ear-Canal Fit",
+      "Battery": "6 Hours Continuous Play / 24 Hours with Capsule Case",
+      "Bluetooth": "Bluetooth 5.3 Low Energy Ultra-Stable",
+      "Weight": "3.2 grams (World's Lightest Class)"
+    },
+    "inTheBox": [
+      "2x TECHNO Nano Buds (L/R)",
+      "1x Aluminum Capsule Charging Case",
+      "3x Soft-Touch Sleep Silicon Wingtips",
+      "1x USB-C Recharging Cable"
+    ]
+  },
+  {
+    "id": "techno-pulse-sport-titanium-hook-earbuds",
+    "title": "TECHNO Pulse Sport Titanium Secure-Hook Earbuds",
+    "shortTitle": "Pulse Sport Hooks",
+    "series": "AERO SERIES",
+    "category": "Airbuds",
+    "price": 119.0,
+    "compareAtPrice": 169.0,
+    "rating": 4.9,
+    "reviewCount": 134,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "Never fall out. Flexible shape-memory titanium earhooks, IP68 fully submersible waterproof rating, physical tactile click buttons, and 48 hours total battery reserve.",
+    "images": [
+      "https://images.unsplash.com/photo-1598331668826-20cecc596b86?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?auto=format&fit=crop&w=800&q=80"
+    ],
+    "variants": [
+      {
+        "name": "Sport Carbon Black",
+        "hex": "#09090B",
+        "imageIndex": 0
+      },
+      {
+        "name": "Electric Lime Accent",
+        "hex": "#84CC16",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Shape-Memory Nickel-Titanium Flexible Over-Ear Grip Hooks",
+      "IP68 Dust & Waterproof Rating (Can be Rinsed Clean Under Running Tap)",
+      "Physical Tactile Click Buttons Immune to Accidental Wet Touches",
+      "48-Hour Massive Total Playback with Heavy-Duty Charging Vault"
+    ],
+    "specs": {
+      "Drivers": "12mm High-Excursion Bio-Diaphragm Drivers with Bass Tube",
+      "Water Rating": "IP68 Submersible Waterproof & Sweatproof",
+      "Battery": "11 Hours Per Charge / 48 Hours with Case",
+      "Controls": "Tactile Click Multi-Function Physical Controls",
+      "Weight": "7.8 grams per earbud with hook"
+    },
+    "inTheBox": [
+      "2x TECHNO Pulse Sport Earbuds with Memory Hooks",
+      "1x Weatherproof Rugged Charging Case",
+      "3x Pairs Sweat-Grip Ribbed Silicone Tips",
+      "1x Heavy Duty Braided USB-C Cable"
+    ]
+  },
+  {
+    "id": "techno-clearaudio-open-ear-conduction-buds",
+    "title": "TECHNO ClearAudio Open-Ear Clip Earbuds",
+    "shortTitle": "ClearAudio Open-Ear",
+    "series": "AERO SERIES",
+    "category": "Airbuds",
+    "price": 129.0,
+    "compareAtPrice": 179.0,
+    "rating": 4.8,
+    "reviewCount": 89,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "Clip-on cuff design leaves your ear canals completely open. Hear traffic, colleagues, and outdoor ambient surroundings while enjoying private directional acoustics.",
+    "images": [
+      "https://images.unsplash.com/photo-1593121925328-369ec8459c0e?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=800&q=80"
+    ],
+    "variants": [
+      {
+        "name": "Matte Pearl Black",
+        "hex": "#1E293B",
+        "imageIndex": 0
+      },
+      {
+        "name": "Glacier White",
+        "hex": "#F1F5F9",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Open-Ear Cuff Architecture: Zero Insertion, Zero Ear Fatigue",
+      "Directional Acoustic Beamforming Prevents Sound Leakage to Others",
+      "Maintains Full Situational Awareness for Running, Cycling & Office",
+      "Featherweight 5.8g Flexible Nickel-Titanium Connector Bridge"
+    ],
+    "specs": {
+      "Drivers": "16.2mm Ultra-Large Composite Diaphragm Transducers",
+      "Audio Tech": "Directional Sound Beamforming with Reverse Phase Cancellation",
+      "Battery": "8 Hours Continuous Play / 32 Hours with Charging Case",
+      "Water Rating": "IPX4 Sweat & Rain Resistant",
+      "Weight": "5.8 grams per cuff"
+    },
+    "inTheBox": [
+      "2x TECHNO ClearAudio Open-Ear Cuffs",
+      "1x Compact Magnetic Charging Cradle",
+      "1x USB-C Quick Charging Cable",
+      "1x User Manual"
+    ]
+  },
+  {
+    "id": "techno-reference-tws-balanced-armature-buds",
+    "title": "TECHNO Reference TWS Balanced Armature Buds",
+    "shortTitle": "Reference TWS Buds",
+    "series": "AERO SERIES",
+    "category": "Airbuds",
+    "price": 179.0,
+    "compareAtPrice": 239.0,
+    "rating": 5.0,
+    "reviewCount": 78,
+    "isSale": true,
+    "isBestSeller": true,
+    "inStock": true,
+    "description": "Triple-driver hybrid configuration featuring Knowles balanced armature and 10mm DLC dynamic woofer. Delivers certified 24-bit/96kHz LDAC lossless wireless audiophile sound.",
+    "images": [
+      "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?auto=format&fit=crop&w=800&q=80"
+    ],
+    "variants": [
+      {
+        "name": "Anodized Gunmetal",
+        "hex": "#374151",
+        "imageIndex": 0
+      },
+      {
+        "name": "Pure Obsidian",
+        "hex": "#111827",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Triple-Driver Hybrid Architecture (Knowles Balanced Armature + 10mm DLC)",
+      "Lossless LDAC Transmission at 990 kbps (Hi-Res Audio Certified)",
+      "CNC Machined Aluminum Alloy Charging Case with Laser-Etched Serial",
+      "Custom 10-Band Parametric EQ Calibration via TECHNO App"
+    ],
+    "specs": {
+      "Acoustic System": "Dual Knowles BA + 10mm Diamond-Like Carbon Dynamic",
+      "Frequency Response": "10Hz - 45,000Hz Ultra-Wide",
+      "Audio Codecs": "LDAC, aptX Lossless, AAC, SBC",
+      "Battery": "7 Hours (LDAC On) / 30 Hours Total with Aluminum Case",
+      "Weight": "5.1 grams per earbud"
+    },
+    "inTheBox": [
+      "2x TECHNO Reference TWS Earbuds",
+      "1x Solid CNC Aluminum Charging Case",
+      "6x Sets Audiophile SpinFit & Memory Foam Tips",
+      "1x Braided USB-C Cable & Cleaning Brush"
+    ]
+  },
+  {
+    "id": "techno-aero-lite-everyday-wireless-buds",
+    "title": "TECHNO Aero Lite True Wireless Earbuds",
+    "shortTitle": "Aero Lite Everyday",
+    "series": "AERO SERIES",
+    "category": "Airbuds",
+    "price": 69.0,
+    "compareAtPrice": 99.0,
+    "rating": 4.7,
+    "reviewCount": 188,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "Featherweight everyday companion with instantaneous Bluetooth 5.3 pairing, environmental call noise suppression, responsive smart touch taps, and 28 hours runtime.",
+    "images": [
+      "https://images.unsplash.com/photo-1628185521798-251f22d10669?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=800&q=80"
+    ],
+    "variants": [
+      {
+        "name": "Arctic Matte White",
+        "hex": "#F8FAFC",
+        "imageIndex": 0
+      },
+      {
+        "name": "Midnight Blue",
+        "hex": "#1E3A8A",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Instant Hall-Switch Auto Pairing When Lid is Opened",
+      "AI Quad-Microphone Environmental Noise Cancellation for Calls",
+      "Intuitive Capacitive Touch Controls for Track & Call Management",
+      "Pocket-Slim Ergonomic Matte Capsule Case"
+    ],
+    "specs": {
+      "Drivers": "10mm Titanium-Coated Dynamic Drivers",
+      "Battery Life": "7 Hours Single Charge / 28 Hours Total",
+      "Fast Charge": "10-Minute Charge Delivers 2 Hours of Music",
+      "Weight": "3.8 grams per bud"
+    },
+    "inTheBox": [
+      "2x TECHNO Aero Lite Earbuds",
+      "1x Matte Capsule Charging Case",
+      "3x Ergonomic Silicone Tips (S/M/L)",
+      "1x USB-C Cable"
+    ]
+  },
+  {
+    "id": "techno-quantum-latency-gaming-buds",
+    "title": "TECHNO Quantum Latency 20ms Gaming Earbuds",
+    "shortTitle": "Quantum Latency Gaming",
+    "series": "AERO SERIES",
+    "category": "Airbuds",
+    "price": 99.0,
+    "compareAtPrice": 139.0,
+    "rating": 4.9,
+    "reviewCount": 104,
+    "isSale": true,
+    "isBestSeller": true,
+    "inStock": true,
+    "description": "Engineered for competitive mobile & console gaming. Dual connection via 20ms ultra-low latency 2.4GHz USB-C transmitter dongle + Bluetooth 5.3 with cyberpunk LED case.",
+    "images": [
+      "https://images.unsplash.com/photo-1592921870789-04563d55041c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?auto=format&fit=crop&w=800&q=80"
+    ],
+    "variants": [
+      {
+        "name": "Cyberpunk Neon Green",
+        "hex": "#10B981",
+        "imageIndex": 0
+      },
+      {
+        "name": "Stealth Carbon Black",
+        "hex": "#18181B",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "20ms Ultra-Low Latency Transmission via Included USB-C Dongle",
+      "Dual-Mode Simultaneous Connection (Play on PC while Taking Calls on Phone)",
+      "Footstep Equalizer Mode Accentuates In-Game Audio Telemetry",
+      "Cyberpunk Mechanical Opening Case with Custom Ambient LEDs"
+    ],
+    "specs": {
+      "Drivers": "10mm Ultra-Rigid Polymer Drivers with Bass Port",
+      "Connectivity": "2.4GHz Wireless USB-C Dongle + Bluetooth 5.3",
+      "Latency": "20ms (Ultra-Low via Dongle) / 45ms (Game Mode via BT)",
+      "Battery": "6 Hours Earbuds / 30 Hours with LED Case",
+      "Weight": "4.4 grams per bud"
+    },
+    "inTheBox": [
+      "2x TECHNO Quantum Gaming Earbuds",
+      "1x Ultra-Slim 2.4GHz USB-C Dongle",
+      "1x Cyberpunk LED Charging Case",
+      "1x USB-A to USB-C Adapter & Cable"
+    ]
+  },
+  {
+    "id": "techno-zen-sleep-noise-masking-earbuds",
+    "title": "TECHNO Zen Sleep Noise-Masking In-Ear Buds",
+    "shortTitle": "Zen Sleep Buds",
+    "series": "AERO SERIES",
+    "category": "Airbuds",
+    "price": 139.0,
+    "compareAtPrice": 189.0,
+    "rating": 4.8,
+    "reviewCount": 97,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "Purpose-built for zero-pressure side sleeping. Tiny curved body disappears into your ear canal, masking snoring and street noise with soothing sound therapy.",
+    "images": [
+      "https://images.unsplash.com/photo-1588423771073-b8903fbb85b5?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=800&q=80"
+    ],
+    "variants": [
+      {
+        "name": "Moonlight Gray",
+        "hex": "#94A3B8",
+        "imageIndex": 0
+      },
+      {
+        "name": "Sleep Silk Sand",
+        "hex": "#E2E8F0",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Micro Curved Ergonomic Body Flushes Inside Ear Cavity for Side Sleeping",
+      "30+ Preloaded Soothing Noise Masking Soundscapes (No Phone Required)",
+      "Smart Sleep Sensor Automatically Fades Sound Once You Fall Asleep",
+      "Personal In-Ear Alarm Wakes Only You Without Disturbing Your Partner"
+    ],
+    "specs": {
+      "Form Factor": "Micro-In-Ear Ultra-Thin 2.8g Profile",
+      "Drivers": "Sub-Miniature Balanced Armature Transducers",
+      "Battery": "10 Hours All-Night Playback / 32 Hours Total",
+      "Passive Noise Reduction": "Up to -30dB Snoring & Traffic Masking",
+      "Weight": "2.8 grams per bud"
+    },
+    "inTheBox": [
+      "2x TECHNO Zen Sleep Buds",
+      "1x Ultra-Slim Sliding Aluminum Charging Case",
+      "4x Pairs Ultra-Soft Dual-Layer Sleep Silicone Sleeves",
+      "1x Sleep Journal Guide & USB-C Cable"
+    ]
+  },
+  {
+    "id": "techno-officelink-4mic-multipoint-earbuds",
+    "title": "TECHNO OfficeLink 4-Mic Multipoint Earbuds",
+    "shortTitle": "OfficeLink Multipoint",
+    "series": "AERO SERIES",
+    "category": "Airbuds",
+    "price": 109.0,
+    "compareAtPrice": 159.0,
+    "rating": 4.9,
+    "reviewCount": 121,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "Seamlessly switch between laptop Zoom calls and mobile phone conversations. Quad beamforming microphones with deep AI neural noise isolation for studio-clean voice meetings.",
+    "images": [
+      "https://images.unsplash.com/photo-1613040809024-b4ef7ba99bc3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?auto=format&fit=crop&w=800&q=80"
+    ],
+    "variants": [
+      {
+        "name": "Executive Matte Black",
+        "hex": "#1E293B",
+        "imageIndex": 0
+      },
+      {
+        "name": "Silver Slate",
+        "hex": "#94A3B8",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Seamless Multipoint Technology Connects Laptop & Phone Concurrently",
+      "Quad Beamforming Mics with AI Voice Pickup Filters 98% of Office Chatter",
+      "Dedicated Physical Mute Button on Stem with Confirmation Chime",
+      "Fast Wireless Qi Charging & All-Day 35-Hour Battery Endurance"
+    ],
+    "specs": {
+      "Microphones": "Quad Array with Deep Neural Network (DNN) Speech Filtering",
+      "Drivers": "11mm Custom Composite Diaphragm",
+      "Battery": "8 Hours Talk Time / 35 Hours with Wireless Case",
+      "Multipoint": "Simultaneous 2-Device Connection (Mac/PC/iOS/Android)",
+      "Weight": "4.6 grams per bud"
+    },
+    "inTheBox": [
+      "2x TECHNO OfficeLink Earbuds",
+      "1x Wireless Charging Case with Battery Indicator",
+      "3x Ergonomic Sound-Sealing Ear Tips",
+      "1x USB-C Charging Cable"
+    ]
+  },
+  {
+    "id": "techno-stormproof-carbon-ipx7-active-buds",
+    "title": "TECHNO Stormproof Carbon IPX7 Active Buds",
+    "shortTitle": "Stormproof Carbon Buds",
+    "series": "AERO SERIES",
+    "category": "Airbuds",
+    "price": 99.0,
+    "compareAtPrice": 149.0,
+    "rating": 4.8,
+    "reviewCount": 75,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "Submersible IPX7 waterproof earbuds with forged carbon composite shell, locked-in sports wingtips, bass booster acoustic chamber, and 40-hour endurance battery.",
+    "images": [
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?auto=format&fit=crop&w=800&q=80"
+    ],
+    "variants": [
+      {
+        "name": "Forged Carbon Gray",
+        "hex": "#27272A",
+        "imageIndex": 0
+      },
+      {
+        "name": "Volcanic Orange Detail",
+        "hex": "#EA580C",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "IPX7 Submersible Waterproofing Withstands Torrential Rain & Sweat",
+      "Real Forged Carbon Fiber Outer Touch Plate",
+      "Ergonomic Sport Wingtips Lock Firmly Into Concha Ridge",
+      "Dynamic Bass Boost Chamber Delivers Heart-Pounding Workout Rhythms"
+    ],
+    "specs": {
+      "Water Rating": "IPX7 Waterproof (1 meter immersion for 30 minutes)",
+      "Drivers": "10mm Carbon Diaphragm Dynamic Bass Drivers",
+      "Battery": "9 Hours Earbuds / 40 Hours Total with Charging Case",
+      "Touch Controls": "Glove-Friendly Capacitive Surface",
+      "Weight": "4.8 grams per bud"
+    },
+    "inTheBox": [
+      "2x TECHNO Stormproof Active Earbuds",
+      "1x Rugged Shock-Resistant Charging Case with Lanyard",
+      "3x Sets Secure Sports Wingtips & Tips",
+      "1x Braided USB-C Cable"
+    ]
+  },
+  {
+    "id": "techno-apex-75-mechanical-keyboard",
+    "title": "TECHNO Apex 75 Low-Profile Mechanical Keyboard",
+    "shortTitle": "Apex 75 Keyboard",
+    "series": "DESK SERIES",
+    "category": "Keyboards",
+    "price": 149.0,
+    "compareAtPrice": 199.0,
+    "rating": 4.9,
+    "reviewCount": 162,
+    "isSale": true,
+    "isBestSeller": true,
+    "inStock": true,
+    "description": "CNC machined aluminum 75% wireless mechanical keyboard. Features hot-swappable low-profile switches, custom acoustic dampening pads, and 1000Hz polling rate.",
+    "images": [
+      "images/keyboard-minimal.jpg",
+      "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=800&q=80"
+    ],
+    "variants": [
+      {
+        "name": "Space Gray Anodized",
+        "hex": "#4B5563",
+        "imageIndex": 0
+      },
+      {
+        "name": "Matte Obsidian",
+        "hex": "#111111",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
       "CNC Machined 6063 Aerospace Aluminum Unibody Top Plate",
       "Hot-Swappable Low-Profile Tactile Switches with Factory Pre-Lube",
       "Tri-Mode Connectivity: 2.4GHz Ultra-Low Latency, Bluetooth 5.3, USB-C",
       "Dual Acoustic PORON Gaskets and IXPE Sound Dampening Sheet",
       "220 Hours Wireless Battery Life with 4000mAh Cell"
     ],
-    specs: {
+    "specs": {
       "Form Factor": "75% Compact Layout (84 Keys)",
       "Switch Type": "TECHNO Low-Profile Mechanical Switches (Hot-Swappable)",
       "Keycaps": "Premium Doubleshot PBT Ergonomic Profile",
       "Connectivity": "Wireless 2.4GHz (1000Hz), Bluetooth 5.3 (Up to 3 Devices), USB-C",
-      "Battery": "4000mAh Rechargeable Lithium-Polymer",
-      "Dimensions": "315mm x 126mm x 18mm • 680 grams"
-    }
+      "Battery": "4000mAh Rechargeable Lithium-Polymer (Up to 220 Hours)",
+      "Dimensions & Weight": "315mm x 126mm x 18mm \u2022 680 grams"
+    },
+    "inTheBox": [
+      "1x TECHNO Apex 75 Mechanical Keyboard",
+      "1x 2.4GHz Ultra-Slim USB-A Receiver",
+      "1x Braided USB-C to USB-A Cable (1.8m)",
+      "1x Dual Switch & Keycap Puller Tool",
+      "3x Extra Replacement Switches"
+    ]
   },
-
-  // 5. SMART WEARABLE: TECHNO VISION SMART GLASSES
   {
-    id: "techno-vision-smart-audio-glasses",
-    title: "TECHNO Vision Smart Audio Sunglasses",
-    shortTitle: "Vision Smart Glasses",
-    series: "SERIES V",
-    category: "Smart Wearables",
-    price: 189.00,
-    compareAtPrice: 269.00,
-    rating: 4.8,
-    reviewCount: 64,
-    isSale: true,
-    isBestSeller: true,
-    inStock: true,
-    description: "Futuristic lightweight polarized smart sunglasses with open-ear directional micro-acoustic drivers embedded in the temples. Enjoy calls and music without ear fatigue.",
-    images: [
-      "images/smart-glasses.jpg"
+    "id": "techno-cyberboard-65-gasket-keyboard",
+    "title": "TECHNO Cyberboard 65% Gasket-Mount Keyboard",
+    "shortTitle": "Cyberboard 65 Gasket",
+    "series": "DESK SERIES",
+    "category": "Keyboards",
+    "price": 179.0,
+    "compareAtPrice": 249.0,
+    "rating": 5.0,
+    "reviewCount": 114,
+    "isSale": true,
+    "isBestSeller": true,
+    "inStock": true,
+    "description": "Heavyweight CNC anodized aluminum 65% custom keyboard. Built with pure PORON gasket suspension, flexible poly-carbonate plate, and deep acoustic thock.",
+    "images": [
+      "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=800&q=80",
+      "images/keyboard-minimal.jpg"
     ],
-    variants: [
-      { name: "Stealth Matte Black", hex: "#111111", imageIndex: 0 },
-      { name: "Polarized Smoke", hex: "#374151", imageIndex: 0 }
+    "variants": [
+      {
+        "name": "Anodized Silver",
+        "hex": "#D1D5DB",
+        "imageIndex": 0
+      },
+      {
+        "name": "Deep Midnight Purple",
+        "hex": "#581C87",
+        "imageIndex": 0
+      }
     ],
-    features: [
+    "features": [
+      "Solid 1.2kg CNC Milled 6063 Aluminum Chassis with Brass Accent Weight",
+      "True Gasket-Mount Isolation Eliminates Harsh Bottom-Out Vibrations",
+      "Factory Lubed Mechanical Switches with Custom Thock Acoustics",
+      "Custom RGB South-Facing LEDs with Underglow Diffuser Strip"
+    ],
+    "specs": {
+      "Form Factor": "65% Exploded Layout (68 Keys)",
+      "Mounting": "Multi-Layer PORON Gasket Isolation Mount",
+      "Plate": "CNC Precision Polycarbonate Flex-Cut Plate",
+      "Switches": "Hot-Swap 5-Pin Compatible (Pre-Lubed Linear 45g)",
+      "Weight": "1250 grams solid desktop anchor"
+    },
+    "inTheBox": [
+      "1x TECHNO Cyberboard 65 Mechanical Keyboard",
+      "1x Coiled Aviator USB-C Custom Cable",
+      "1x Aluminum Keycap & Switch Puller",
+      "1x Acrylic Dust Cover"
+    ]
+  },
+  {
+    "id": "techno-matrix-80-tkl-tournament-keyboard",
+    "title": "TECHNO Matrix 80 Tenkeyless Tournament Keyboard",
+    "shortTitle": "Matrix 80 TKL",
+    "series": "DESK SERIES",
+    "category": "Keyboards",
+    "price": 169.0,
+    "compareAtPrice": 229.0,
+    "rating": 4.9,
+    "reviewCount": 96,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "8000Hz hyper-polling rate tournament tenkeyless board equipped with magnetic Hall Effect analog switches, rapid trigger reset, and per-key 0.1mm actuation tuning.",
+    "images": [
+      "https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=800&q=80",
+      "images/keyboard-minimal.jpg"
+    ],
+    "variants": [
+      {
+        "name": "Tournament Matte Black",
+        "hex": "#111827",
+        "imageIndex": 0
+      },
+      {
+        "name": "Frost White Edition",
+        "hex": "#F9FAFB",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "8,000Hz Hyper-Polling Rate with Sub-0.125ms Input Latency",
+      "Magnetic Hall Effect Switches with Dynamic Rapid Trigger Activation",
+      "Adjustable Actuation Point from 0.1mm to 4.0mm in 0.05mm Increments",
+      "Aluminum Faceplate with Per-Key South-Facing RGB Illumination"
+    ],
+    "specs": {
+      "Layout": "80% Tenkeyless (87 Keys ANSI)",
+      "Polling Rate": "8000Hz Real Hardware Polling",
+      "Switches": "TECHNO Magnetic Hall Effect Analog Linear Switches",
+      "Actuation Range": "0.1mm - 4.0mm Fully Configurable per Key",
+      "Keycaps": "Doubleshot PBT Textured Shine-Through",
+      "Weight": "980 grams"
+    },
+    "inTheBox": [
+      "1x TECHNO Matrix 80 TKL Tournament Keyboard",
+      "1x Detachable High-Speed Braided USB-C Cable",
+      "1x Magnetic Snap-On Wrist Rest",
+      "1x Keycap Puller Tool"
+    ]
+  },
+  {
+    "id": "techno-ergo-split-programmable-keyboard",
+    "title": "TECHNO Ergo Split Ortholinear Mechanical Keyboard",
+    "shortTitle": "Ergo Split Keyboard",
+    "series": "DESK SERIES",
+    "category": "Keyboards",
+    "price": 199.0,
+    "compareAtPrice": 279.0,
+    "rating": 5.0,
+    "reviewCount": 58,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "Two-piece split ergonomic keyboard designed to eliminate wrist pronation and RSI. Columnar ortholinear key layout, adjustable magnetic tenting, and QMK/VIA firmware.",
+    "images": [
+      "https://images.unsplash.com/photo-1541140532154-b024d705b909?auto=format&fit=crop&w=800&q=80",
+      "images/keyboard-minimal.jpg"
+    ],
+    "variants": [
+      {
+        "name": "Anodized Charcoal",
+        "hex": "#374151",
+        "imageIndex": 0
+      },
+      {
+        "name": "Silver Mist",
+        "hex": "#E5E7EB",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Two Independent Split Halves Allowing Natural Shoulder-Width Posture",
+      "Integrated Multi-Angle Magnetic Tenting Kit (5\u00b0, 10\u00b0, 15\u00b0)",
+      "Columnar Staggered Ortholinear Matrix Aligned with Natural Finger Reach",
+      "Fully Programmable via Web-Based QMK/VIA Firmware (Zero Software Install)"
+    ],
+    "specs": {
+      "Layout": "58-Key Split Ortholinear Ergonomic Matrix",
+      "Firmware": "QMK / VIA / VIAL Fully Open Source Programmable",
+      "Screens": "Dual Micro-OLED Layer & Status Display Screens",
+      "Switches": "Hot-Swappable 5-Pin Mechanical Sockets",
+      "Tenting": "Adjustable Tenting Feet Included",
+      "Weight": "850 grams combined"
+    },
+    "inTheBox": [
+      "1x TECHNO Ergo Split Keyboard (Left & Right Halves)",
+      "1x TRRS Interconnect Cable (Gold-Plated)",
+      "1x Main USB-C to USB-C Host Cable",
+      "4x Magnetic Aluminum Tenting Legs"
+    ]
+  },
+  {
+    "id": "techno-zero-60-compact-stealth-keyboard",
+    "title": "TECHNO Zero 60 Minimalist 60% Keyboard",
+    "shortTitle": "Zero 60 Stealth",
+    "series": "DESK SERIES",
+    "category": "Keyboards",
+    "price": 119.0,
+    "compareAtPrice": 169.0,
+    "rating": 4.8,
+    "reviewCount": 147,
+    "isSale": true,
+    "isBestSeller": true,
+    "inStock": true,
+    "description": "Pure desktop minimalism. Ultra-compact 60% footprint gives maximum mouse sweep room. Pre-lubed silent linear switches and multi-device Bluetooth memory.",
+    "images": [
+      "https://images.unsplash.com/photo-1563198807-b13d4c1a3f5a?auto=format&fit=crop&w=800&q=80",
+      "images/keyboard-minimal.jpg"
+    ],
+    "variants": [
+      {
+        "name": "Frosted Smoke Polycarbonate",
+        "hex": "#1F2937",
+        "imageIndex": 0
+      },
+      {
+        "name": "Pure Chalk White",
+        "hex": "#F3F4F6",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Compact 60% Form Factor Frees Over 40% of Desktop Space for Mouse Moves",
+      "Pre-Lubed Whisper Silent Linear Switches for Library & Office Peace",
+      "Bluetooth 5.3 Multi-Host Pairs with Up to 4 Devices with Instant Switch",
+      "Frosted Acoustic Chamber Polycarbonate Shell with Warm White Backlight"
+    ],
+    "specs": {
+      "Layout": "60% Minimal Layout (61 Keys ANSI)",
+      "Switches": "TECHNO Silent Linear Pro (Pre-Lubed, <28dB Acoustic)",
+      "Battery": "3000mAh Rechargeable Cell (180 Hours Battery Life)",
+      "Dimensions": "290mm x 100mm x 32mm",
+      "Weight": "550 grams"
+    },
+    "inTheBox": [
+      "1x TECHNO Zero 60 Mechanical Keyboard",
+      "1x Braided USB-C Cable",
+      "1x Keycap Puller Tool",
+      "1x Quick Command Shortcut Card"
+    ]
+  },
+  {
+    "id": "techno-artisan-full-size-108-keyboard",
+    "title": "TECHNO Artisan Full-Size 108 Mechanical Keyboard",
+    "shortTitle": "Artisan Full-Size 108",
+    "series": "DESK SERIES",
+    "category": "Keyboards",
+    "price": 189.0,
+    "compareAtPrice": 259.0,
+    "rating": 4.9,
+    "reviewCount": 82,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "Uncompromised professional productivity. Complete 108-key layout with dedicated numpad, CNC machined rotary OLED media knob, and acoustic gasket dampening.",
+    "images": [
+      "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=800&q=80",
+      "images/keyboard-minimal.jpg"
+    ],
+    "variants": [
+      {
+        "name": "Executive Slate Gray",
+        "hex": "#374151",
+        "imageIndex": 0
+      },
+      {
+        "name": "Classic Brushed Silver",
+        "hex": "#9CA3AF",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Full 100% Layout with Complete Dedicated Accounting Number Pad",
+      "Precision Rotary Encoder Knob with Integrated OLED Volume & Clock Readout",
+      "Multi-Layer IXPE Sound Dampening and Factory Lubed Stabilizers",
+      "Tri-Mode Wireless Connectivity with 4000mAh Extended Battery"
+    ],
+    "specs": {
+      "Form Factor": "100% Full Size (108 Keys + Multimedia Knob)",
+      "Top Plate": "Brushed Anodized Aluminum Top Frame",
+      "Switches": "Hot-Swappable Tactile Brown Pro Switches",
+      "Keycaps": "Cherry Profile Doubleshot PBT Oil-Resistant Keycaps",
+      "Weight": "1450 grams Solid Heavyweight"
+    },
+    "inTheBox": [
+      "1x TECHNO Artisan Full-Size Keyboard",
+      "1x Padded Memory Foam Magnetic Wrist Rest",
+      "1x 2.4GHz Nano Wireless Receiver",
+      "1x USB-C Braided Cable & Switch Puller"
+    ]
+  },
+  {
+    "id": "techno-retro-typewriter-clicky-keyboard",
+    "title": "TECHNO Retro Classic Clicky Mechanical Keyboard",
+    "shortTitle": "Retro Typewriter Clicky",
+    "series": "DESK SERIES",
+    "category": "Keyboards",
+    "price": 139.0,
+    "compareAtPrice": 189.0,
+    "rating": 4.8,
+    "reviewCount": 77,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "Nostalgic 1950s typewriter aesthetics married to modern wireless electronics. Circular zinc-alloy rimmed keycaps, crisp tactile acoustic clicks, and return bar lever.",
+    "images": [
+      "https://images.unsplash.com/photo-1626958390898-162d3577f293?auto=format&fit=crop&w=800&q=80",
+      "images/keyboard-minimal.jpg"
+    ],
+    "variants": [
+      {
+        "name": "Gunmetal & Gloss Black",
+        "hex": "#18181B",
+        "imageIndex": 0
+      },
+      {
+        "name": "Vintage Cream & Chrome",
+        "hex": "#FEF3C7",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Authentic Round Circular Keycaps with Electroplated Zinc Metal Trim",
+      "High-Satisfaction Tactile Clicky Mechanical Blue Switches",
+      "Functional Return Carriage Lever for Quick Bluetooth Device Swapping",
+      "Warm Amber Backlit Illumination with Multiple Breathing Modes"
+    ],
+    "specs": {
+      "Form Factor": "83-Key Compact Layout with Vintage Lever",
+      "Switches": "TECHNO Vintage Clicky Mechanical (55g Actuation)",
+      "Backlighting": "Warm Vintage Amber LED Backlight",
+      "Connectivity": "Bluetooth 5.3 & USB-C Wired Mode",
+      "Weight": "1100 grams"
+    },
+    "inTheBox": [
+      "1x TECHNO Retro Classic Keyboard",
+      "1x Vintage Cotton Braided USB-C Cable",
+      "4x Replacement Mac / Windows Accent Keycaps",
+      "1x User Manual & Cleaning Cloth"
+    ]
+  },
+  {
+    "id": "techno-silent-executive-office-keyboard",
+    "title": "TECHNO Silent Executive Low-Noise Mechanical Keyboard",
+    "shortTitle": "Silent Executive Office",
+    "series": "DESK SERIES",
+    "category": "Keyboards",
+    "price": 159.0,
+    "compareAtPrice": 219.0,
+    "rating": 4.9,
+    "reviewCount": 103,
+    "isSale": true,
+    "isBestSeller": true,
+    "inStock": true,
+    "description": "Engineered for quiet boardroom meetings and open offices. Dual-layer silicone sound absorbing pillows keep keypress sound levels below 25 decibels.",
+    "images": [
+      "https://images.unsplash.com/photo-1601445638532-3c6f6c3aa1d6?auto=format&fit=crop&w=800&q=80",
+      "images/keyboard-minimal.jpg"
+    ],
+    "variants": [
+      {
+        "name": "Executive Matte Graphite",
+        "hex": "#1F2937",
+        "imageIndex": 0
+      },
+      {
+        "name": "Nordic Birch Silver",
+        "hex": "#E5E7EB",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Sub-25dB Whisper-Quiet Mechanical Switches (Quieter Than Membrane)",
+      "96% Efficient Layout Keeps Full Numpad in 15% Less Desk Space",
+      "Universal Mac / Windows Seamless One-Switch Hardware Layout Toggle",
+      "Clean Static White Keycap Backlighting with Zero Flash Distractions"
+    ],
+    "specs": {
+      "Layout": "96% Compact Full-Size (98 Keys)",
+      "Acoustic Rating": "< 25dB Whisper Quiet Certified",
+      "Switches": "Pre-Lubed Silent Linear Mechanical Dampened Switches",
+      "Battery": "4000mAh Battery (Up to 300 Hours Wireless)",
+      "Weight": "920 grams"
+    },
+    "inTheBox": [
+      "1x TECHNO Silent Executive Keyboard",
+      "1x USB-A 2.4GHz Wireless Nano Receiver",
+      "1x USB-C Charging Cable",
+      "1x Mac/Windows Replacement Keycaps"
+    ]
+  },
+  {
+    "id": "techno-magstrike-hall-effect-gaming-keyboard",
+    "title": "TECHNO MagStrike Magnetic Rapid-Trigger Keyboard",
+    "shortTitle": "MagStrike Magnetic",
+    "series": "DESK SERIES",
+    "category": "Keyboards",
+    "price": 199.0,
+    "compareAtPrice": 269.0,
+    "rating": 5.0,
+    "reviewCount": 91,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "Magnetic Hall Effect switches with 0.1mm to 4.0mm adjustable actuation depth, instant Rapid Trigger reset in 0.05mm, and analog WASD joystick emulation for racing games.",
+    "images": [
+      "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?auto=format&fit=crop&w=800&q=80",
+      "images/keyboard-minimal.jpg"
+    ],
+    "variants": [
+      {
+        "name": "Anodized Black Titanium",
+        "hex": "#111827",
+        "imageIndex": 0
+      },
+      {
+        "name": "Cyber Yellow Accent",
+        "hex": "#EAB308",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Contactless Magnetic Hall Effect Sensors with 100 Million Keystroke Life",
+      "Rapid Trigger Mode Resets Key Instantly Upon Lifting for Counter-Strafing",
+      "Analog Keystroke Emulation Allows Gradual Acceleration in Driving Games",
+      "Heavyweight CNC Aluminum Body with South-Facing 16.8M Color RGB"
+    ],
+    "specs": {
+      "Layout": "75% Competitive Esports Layout (82 Keys)",
+      "Switches": "Hall Effect Magnetic Analog Linear (0.1mm - 4.0mm configurable)",
+      "Polling Rate": "8000Hz Hardware Real-Time Engine",
+      "Weight": "1050 grams solid anchor"
+    },
+    "inTheBox": [
+      "1x TECHNO MagStrike Mechanical Keyboard",
+      "1x Custom Coiled USB-C to USB-A Cable",
+      "1x Aluminum Keycap & Switch Puller",
+      "1x Calibration Reference Chart"
+    ]
+  },
+  {
+    "id": "techno-nomad-pocket-tri-fold-wireless-keyboard",
+    "title": "TECHNO Nomad Pocket Tri-Fold Wireless Keyboard",
+    "shortTitle": "Nomad Tri-Fold Keyboard",
+    "series": "DESK SERIES",
+    "category": "Keyboards",
+    "price": 79.0,
+    "compareAtPrice": 119.0,
+    "rating": 4.7,
+    "reviewCount": 119,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "Folds down to the size of a smartphone. Aircraft aluminum hinge, integrated glass-touch trackpad, responsive scissor-switches, and magnetic auto sleep/wake.",
+    "images": [
+      "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=800&q=80",
+      "images/keyboard-minimal.jpg"
+    ],
+    "variants": [
+      {
+        "name": "Space Gray Aluminum",
+        "hex": "#4B5563",
+        "imageIndex": 0
+      },
+      {
+        "name": "Silver Metallic",
+        "hex": "#D1D5DB",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Innovative Tri-Fold Hinge Collapses Entire Keyboard into Coat Pocket",
+      "Integrated Precision Multitouch Trackpad Supporting Gesture Navigation",
+      "Aviation-Grade CNC Aluminum Alloy Outer Shell Resists Bends & Drops",
+      "Auto Magnetic Power On/Off Sensor When Opening or Folding"
+    ],
+    "specs": {
+      "Folded Dimensions": "152mm x 98mm x 15mm (Pocket Size)",
+      "Key Mechanism": "Precision Scissor-Switch Low-Profile Keys",
+      "Trackpad": "Integrated Multitouch Glass-Touch Pad",
+      "Battery": "60 Hours Continuous Typing / 90 Days Standby",
+      "Weight": "198 grams Featherweight Travel Tool"
+    },
+    "inTheBox": [
+      "1x TECHNO Nomad Tri-Fold Wireless Keyboard",
+      "1x Velvet Protective Travel Pouch",
+      "1x Folding Smartphone & Tablet Stand",
+      "1x USB-C Recharging Cable"
+    ]
+  },
+  {
+    "id": "techno-vision-smart-audio-glasses",
+    "title": "TECHNO Vision Smart Audio Polarized Sunglasses",
+    "shortTitle": "Vision Audio Shades",
+    "series": "NEURAL VISION",
+    "category": "AI Glasses",
+    "price": 189.0,
+    "compareAtPrice": 269.0,
+    "rating": 4.8,
+    "reviewCount": 126,
+    "isSale": true,
+    "isBestSeller": true,
+    "inStock": true,
+    "description": "Futuristic lightweight polarized smart sunglasses with open-ear directional micro-acoustic drivers embedded in the temples. Enjoy calls and music without ear fatigue.",
+    "images": [
+      "images/smart-glasses.jpg",
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=800&q=80"
+    ],
+    "variants": [
+      {
+        "name": "Stealth Matte Black",
+        "hex": "#111111",
+        "imageIndex": 0
+      },
+      {
+        "name": "Polarized Smoke",
+        "hex": "#374151",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
       "Open-Ear Spatial Acoustics with Zero Sound Leakage Technology",
       "Polarized TAC UV400 Anti-Scratch & Anti-Glare Lenses",
       "Dual Microphones with AI Environmental Wind-Noise Cancellation",
       "Intuitive Capacitive Touch Temple Controls for Volume & Voice Assistant",
       "Featherweight 43g All-Day Comfortable Ergonomic Frame"
     ],
-    specs: {
+    "specs": {
       "Audio System": "Dual Custom 16mm Micro-Speakers with Directional Baffles",
       "Lens Rating": "Cat.3 UV400 Polarized (Blocks 99.9% UVA/UVB)",
       "Microphones": "Beamforming Dual-Mic Array with Deep Noise Suppression",
       "Playtime": "7 Hours Music Playback / 12 Hours Voice Calls",
       "Charging": "Magnetic Fast Charging Cable (100% in 55 mins)",
-      "Water Resistance": "IPX4 Sweat & Splash Resistant"
-    }
-  },
-
-  // 6. TECH HARDWARE: MAGFLOW 10K POWER BANK
-  {
-    id: "techno-magflow-magnetic-powerbank",
-    title: "TECHNO MagFlow 10,000mAh Magnetic Power Bank",
-    shortTitle: "MagFlow 10K Power Bank",
-    series: "DESK SERIES",
-    category: "Hardware & Peripherals",
-    price: 59.00,
-    compareAtPrice: 79.00,
-    rating: 4.9,
-    reviewCount: 115,
-    isSale: true,
-    isBestSeller: true,
-    inStock: true,
-    description: "Minimalist aerospace titanium and frosted glass magnetic wireless power bank. Features glowing numeric LED battery percentage readout and 20W PD two-way fast charging.",
-    images: [
-      "images/powerbank-mag.jpg"
-    ],
-    variants: [
-      { name: "Natural Titanium", hex: "#9E9E9E", imageIndex: 0 },
-      { name: "Frosted Obsidian", hex: "#1A1A1A", imageIndex: 0 }
-    ],
-    features: [
-      "Snap-On MagSafe / Qi2 Compatible Magnetic Wireless Charging (15W)",
-      "Glowing Micro-LED Percentage Battery Display",
-      "20W Power Delivery 3.0 Bi-Directional Fast USB-C Port",
-      "Ultra-Strong 12N Neodymium N52 Magnetic Locking Grip",
-      "Aircraft-Grade CNC Aluminum Alloy Heat-Dissipation Enclosure"
-    ],
-    specs: {
-      "Capacity": "10,000mAh / 38.5Wh (TSA Approved for Flight Carry-on)",
-      "Wireless Output": "5W / 7.5W / 10W / 15W Max Qi2 Fast Wireless",
-      "USB-C In/Out": "5V/3A, 9V/2.22A, 12V/1.67A (20W PD Max)",
-      "Safety Protection": "Overcharge, Overcurrent, Short-Circuit, Foreign Object Detection",
-      "Weight": "190 grams ultra-slim"
-    }
-  },
-
-  // 7. STUDIO MONITOR: HEADPHONE AIR
-  {
-    id: "techno-studio-headphone-air",
-    title: "TECHNO Studio Headphone Air",
-    shortTitle: "Headphone Air",
-    series: "SERIES S",
-    category: "Over-Ear Headphones",
-    price: 199.00,
-    compareAtPrice: 299.00,
-    rating: 4.8,
-    reviewCount: 52,
-    isSale: true,
-    isBestSeller: true,
-    inStock: true,
-    description: "Ultra-lightweight open-back reference studio monitor headphones designed for acoustic mastering and marathon listening sessions.",
-    images: [
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDkIbnZpshtyNmE0iWr11pFI9uPaRi-kEOabvsUs72354KDYfTp1dn3EoOzyRXJC1rdgrte2w_yyY-BQU8ecXDdDZKaMQuAyEDshaDka0Lp_wR9oUdEeKnCgftMEpn90K-xuUEshlcNEjenK-opYcwE8-DmRv7BTuAYRnYx1NbSjTtRpd1Cq56mSljRxIxnCX_bH8QExJE2Su0wkKA-yybhGgdBrM3r65GZuaO0m9kP"
-    ],
-    variants: [{ name: "Silver Frame", hex: "#D4D4D8", imageIndex: 0 }]
-  },
-
-  // 8. TRUE WIRELESS EARBUDS
-  {
-    id: "techno-earphone-pro",
-    title: "TECHNO True Wireless Earbuds",
-    shortTitle: "Earphone Pro",
-    series: "SERIES T",
-    category: "In-Ear Earphones",
-    price: 199.00,
-    compareAtPrice: 299.00,
-    rating: 4.9,
-    reviewCount: 84,
-    isSale: true,
-    isBestSeller: true,
-    inStock: true,
-    description: "Lossless wireless in-ear monitors with custom graphene drivers, beamforming quad microphones, and wireless charging case.",
-    images: [
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAG8qwu8PQm-tsEaM_sK7xqCHzTlMtlSyf9Auh7MOunv2Lwi7T2_L4oy9y6g7c_Z7RYGbRuHRIL1ILRgm4hUJXWiwObkDIZmT7gUAP7oa4Jn3JoI3YkXHFAQP2MUUAasuxP1SKZ3uGtOFlPnxUBV8gaVP-PoxkfFt9cMckizpQJJKLQE7ZFk6cxjuwnQNr_qJNB7A-oFzfC6ewtPJXxKcQ1TawznuYqR9wlHRlkY8-_"
-    ],
-    variants: [
-      { name: "Pure White", hex: "#FFFFFF", imageIndex: 0 },
-      { name: "Matte Black", hex: "#111111", imageIndex: 0 }
+      "Water Resistance": "IPX4 Sweat & Splash Resistant",
+      "Weight": "43 grams"
+    },
+    "inTheBox": [
+      "1x TECHNO Vision Smart Audio Sunglasses",
+      "1x Magnetic USB Charging Cable",
+      "1x Leatherette Collapsible Protective Case",
+      "1x Microfiber Optical Cleaning Cloth"
     ]
   },
-
-  // 9. SMARTPHONE SERIES ONE
   {
-    id: "techno-smartphone-series-one",
-    title: "TECHNO Mobile Series One",
-    shortTitle: "Iphone / Mobile Tech",
-    series: "TECH HARDWARE",
-    category: "Hardware & Peripherals",
-    price: 199.00,
-    compareAtPrice: 299.00,
-    rating: 4.7,
-    reviewCount: 39,
-    isSale: true,
-    isBestSeller: true,
-    inStock: true,
-    description: "Flagship titanium device companion featuring minimal stock audio OS, high-frequency haptics, and lossless audio streaming.",
-    images: [
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAJhp-rfANYoH0sEVbTkLhXJbTppXYlHw73BGk79mYynjNrmRX-AJVc6V6KetWBWRjDojjBtI6VKH9EBbM1uwx4jsv99kwnRo0Glrq96ecdzOOef0jbwBydpVtPv0xCwakxHsEsOFJWdgq_VxcxQfRS2BrzlXuY9BfCSIg-VjCZL2aMnLs_crlGykvLJ-9hctb02YOu0WNrtifU3egfdn_I2UGaTpyiDk6fVJppe-KP"
+    "id": "techno-neural-hud-micro-oled-ai-glasses",
+    "title": "TECHNO Neural HUD Micro-OLED AI Smart Glasses",
+    "shortTitle": "Neural HUD AI Glasses",
+    "series": "NEURAL VISION",
+    "category": "AI Glasses",
+    "price": 399.0,
+    "compareAtPrice": 549.0,
+    "rating": 5.0,
+    "reviewCount": 89,
+    "isSale": true,
+    "isBestSeller": true,
+    "inStock": true,
+    "description": "Micro-OLED binocular transparent waveguide optical engine. Projects real-time turn-by-turn navigation arrows, caller ID, notifications, and AI assistant directly in your line of sight.",
+    "images": [
+      "https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&w=800&q=80",
+      "images/smart-glasses.jpg"
     ],
-    variants: [{ name: "Natural Titanium", hex: "#9E9E9E", imageIndex: 0 }]
+    "variants": [
+      {
+        "name": "Titanium Carbon Black",
+        "hex": "#18181B",
+        "imageIndex": 0
+      },
+      {
+        "name": "Glacier Silver Titanium",
+        "hex": "#E2E8F0",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Transparent Geometric Waveguide Displays Crisp Green/White HUD in Field of View",
+      "Integrated Multimodal AI Assistant (Visual Queries & Voice Conversations)",
+      "Real-Time Telemetry Overlay: Speedometer, Turn-by-Turn GPS Waypoints, Heart Rate",
+      "Lightweight 48g Frame Identical to Everyday Designer Eyewear"
+    ],
+    "specs": {
+      "Optical Engine": "Binocular Transparent Micro-Waveguide (600 nits Peak)",
+      "Resolution": "640 x 480 Monochromatic Micro-OLED per Eye",
+      "Sensors": "3-Axis Accelerometer, 3-Axis Gyroscope, Optical Ambient Light",
+      "Microphones": "Dual Beamforming with Voice Activation",
+      "Battery Life": "5 Hours Active HUD Display / 14 Hours Standby",
+      "Weight": "48 grams"
+    },
+    "inTheBox": [
+      "1x TECHNO Neural HUD AI Smart Glasses",
+      "1x Fast Magnetic Snap Charging Cable",
+      "1x Hard Shell Travel Case with Battery Dock",
+      "1x Optical Cleaning Cloth & App Quick Setup Card"
+    ]
   },
-
-  // 10. ACOUSTIC 360 SPEAKER
   {
-    id: "techno-ambient-sound-speaker",
-    title: "TECHNO Acoustic 360 Speaker",
-    shortTitle: "Speaker 360",
-    series: "HOME ACOUSTICS",
-    category: "Wireless Speakers",
-    price: 199.00,
-    compareAtPrice: 299.00,
-    rating: 4.9,
-    reviewCount: 110,
-    isSale: true,
-    isBestSeller: true,
-    inStock: true,
-    description: "Room-filling 360-degree spatial audio speaker with dual passive radiators, anodized aluminum grille, and 24-hour party link.",
-    images: [
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuA-W_rcjQf5aG06Qb1Iv-KAE0yA-Rx9jt-GI0HUUAS8I6GmDHk3kcGmsy8oZaO1b2BjJSL9tioWadPryMF9MbbPPW_jGc2ENahFtbjUgX9b1i9oT6NWbNTPBhAf5sH03TuiIeofYpZirGVZMKgQBRaetp2I-uhcJN-E_B_r6xww6f-jboykMdQjODjceAYV3ayxkjsw7OngAE4bfXX6srj3UXRiI2csvOfChB3sb-LH"
+    "id": "techno-prisma-ar-spatial-computing-glasses",
+    "title": "TECHNO Prisma AR Spatial Computing Glasses",
+    "shortTitle": "Prisma AR Spatial",
+    "series": "NEURAL VISION",
+    "category": "AI Glasses",
+    "price": 449.0,
+    "compareAtPrice": 599.0,
+    "rating": 4.9,
+    "reviewCount": 71,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "Simulates a massive 120-inch 1080p OLED virtual cinema display right before your eyes. Connects directly to iPhone, Mac, PC, Steam Deck, or PlayStation via USB-C DisplayPort.",
+    "images": [
+      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80",
+      "images/smart-glasses.jpg"
     ],
-    variants: [{ name: "Graphite Anodized", hex: "#262626", imageIndex: 0 }]
+    "variants": [
+      {
+        "name": "Obsidian Mirror Black",
+        "hex": "#0F172A",
+        "imageIndex": 0
+      },
+      {
+        "name": "Space Gray",
+        "hex": "#475569",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Simulates a Virtual 120-Inch Giant Screen at 4 Meters Distance",
+      "Dual Sony Full HD Micro-OLED Displays with 120Hz Ultra-Smooth Refresh",
+      "3DoF / 6DoF Spatial Anchoring Lets Screen Float Fixed in Room Space",
+      "Direct Plug-and-Play USB-C DisplayPort for Steam Deck, iPhone 15/16, Mac & PC"
+    ],
+    "specs": {
+      "Display Engine": "Dual 0.71\" Sony Micro-OLED (1920x1080 per Eye)",
+      "Field of View": "46-Degree FOV (Simulating 120\" Screen at 4m)",
+      "Refresh Rate": "120Hz High-Refresh Cinema Gaming Mode",
+      "Audio": "High-Definition Directional Stereo Acoustic Chambers",
+      "Weight": "75 grams Ergonomic Balanced Weight"
+    },
+    "inTheBox": [
+      "1x TECHNO Prisma AR Spatial Glasses",
+      "1x Detachable Angle USB-C DisplayPort Cable (1.2m)",
+      "1x Light-Blocking Snap-on Magnetic Cinema Visor",
+      "1x Prescription Lens Frame Insert",
+      "1x Rugged Zipper Capsule Case"
+    ]
   },
-
-  // 11. STUDIO ANC+ EDITION
   {
-    id: "techno-studio-anc-plus",
-    title: "TECHNO Studio ANC+ Edition",
-    shortTitle: "Headphone ANC+",
-    series: "STUDIO REFERENCE",
-    category: "Over-Ear Headphones",
-    price: 249.00,
-    compareAtPrice: 349.00,
-    rating: 5.0,
-    reviewCount: 77,
-    isSale: true,
-    isBestSeller: false,
-    inStock: true,
-    description: "Studio-grade active noise cancellation headphones with real-time room calibration and carbon-fiber acoustic chambers.",
-    images: [
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAKWiKmrwGyImiWkFAT7Tdxt5p-2WkIBkhmGU5rlKvXSTDY8bbjfVYiTlvgiXd29K_QC-dwOtTGrWvUGlMSvhrkjQIgRBQSNLtN4AHkJ4an_pNiLx_tDh4rzyBbQWtTWNuYZ3eKM_AlD-uYeNxM2lHcgcFWntbBfFx8SEouDY4iTlrG7TQ3L5Eqskr6gNUJGDS6gzdscy61JtajMeOuArDJU8rYFtNgf4GztsIZAqSM"
+    "id": "techno-raysense-photochromic-ai-glasses",
+    "title": "TECHNO RaySense Photochromic Smart Audio Glasses",
+    "shortTitle": "RaySense Photochromic",
+    "series": "NEURAL VISION",
+    "category": "AI Glasses",
+    "price": 219.0,
+    "compareAtPrice": 299.0,
+    "rating": 4.9,
+    "reviewCount": 85,
+    "isSale": true,
+    "isBestSeller": true,
+    "inStock": true,
+    "description": "Smart transition lenses automatically adapt from 100% clear indoor reading lenses to dark polarized outdoor sunglasses in under 20 seconds. Built-in open-ear Hi-Fi audio.",
+    "images": [
+      "https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&w=800&q=80",
+      "images/smart-glasses.jpg"
     ],
-    variants: [{ name: "Midnight Charcoal", hex: "#171717", imageIndex: 0 }]
+    "variants": [
+      {
+        "name": "Gloss Classic Black",
+        "hex": "#111827",
+        "imageIndex": 0
+      },
+      {
+        "name": "Tortoiseshell Brown",
+        "hex": "#78350F",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Fast Molecular Photochromic Lenses: Clear Indoors, Dark Smoke in Sunlight",
+      "Open-Ear Dual Micro-Speakers with Reverse-Phase Privacy Shielding",
+      "One-Touch Voice Assistant Summoning for Siri, Google Assistant & ChatGPT",
+      "IPX4 Sweat and Rain Resistance for Commuting and Running"
+    ],
+    "specs": {
+      "Lenses": "Dynamic Molecular Photochromic (10% Clear to 85% Dark in 20s)",
+      "Speakers": "Dual 15mm Directional Micro-Speakers",
+      "Battery": "8 Hours Continuous Audio / 14 Hours Voice Calling",
+      "Connectivity": "Bluetooth 5.3 Multipoint Dual Pairing",
+      "Weight": "44 grams"
+    },
+    "inTheBox": [
+      "1x TECHNO RaySense Photochromic Smart Glasses",
+      "1x Magnetic Fast Charging Cable",
+      "1x Foldable Leatherette Hard Case",
+      "1x Lens Cleaning Cloth"
+    ]
   },
-
-  // 12. AERO PODS WIRELESS
   {
-    id: "techno-wireless-earbuds-anc",
-    title: "TECHNO Aero Pods Wireless",
-    shortTitle: "Earbuds Aero",
-    series: "SERIES T",
-    category: "In-Ear Earphones",
-    price: 129.00,
-    compareAtPrice: 179.00,
-    rating: 4.8,
-    reviewCount: 65,
-    isSale: true,
-    isBestSeller: false,
-    inStock: true,
-    description: "Ultra-compact ergonomic true wireless earbuds featuring sub-bass boost chamber and IPX7 sweat resistance.",
-    images: [
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDh1IgBMLixmfXRjfWHp9PSVT5mPv9rZ36a-CChq9MkYaX2BwKJgYbnM-ZjWjYu5jHIhKzJJs84PPrlTeUYwFsaQrvNqWziYLf0ixkyF7OhorelxtCeCLVPNRQS8Tjx46zQEliwNGITgCxK1R6wSovEuic027_elWMMuDtLQYk9J5RC-PJq_IuyZ7tLUc18iLaHaDY1ii3aXyaTLnmqr3rncIiploDU46yNECEh6cpj"
+    "id": "techno-titanium-optical-prescription-ai-frames",
+    "title": "TECHNO Titanium Optical Prescription-Ready AI Frames",
+    "shortTitle": "Titanium Optical AI",
+    "series": "NEURAL VISION",
+    "category": "AI Glasses",
+    "price": 239.0,
+    "compareAtPrice": 329.0,
+    "rating": 5.0,
+    "reviewCount": 64,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "Crafted from ultralight Japanese Beta-Titanium wire. Accepts standard optometrist prescription lenses (RX Ready). Discreet bone-conduction transducers built invisibly inside.",
+    "images": [
+      "https://images.unsplash.com/photo-1509695503492-4133372b3506?auto=format&fit=crop&w=800&q=80",
+      "images/smart-glasses.jpg"
     ],
-    variants: [{ name: "Pearl White", hex: "#F3F4F6", imageIndex: 0 }]
+    "variants": [
+      {
+        "name": "Raw Brushed Titanium",
+        "hex": "#94A3B8",
+        "imageIndex": 0
+      },
+      {
+        "name": "Matte Jet DLC Titanium",
+        "hex": "#1E293B",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Ultra-Slim 36g Japanese Beta-Titanium Frame: Indistinguishable from Luxury Frames",
+      "Full Prescription RX Ready: Compatible with Single Vision, Bifocal & Progressives",
+      "Hidden Temporal Bone-Conduction Transducers for Private Whispered Audio",
+      "Magnetic Rapid Quick-Charge Pogo Pins with 16-Hour Standby"
+    ],
+    "specs": {
+      "Frame Material": "100% Japanese Beta-Titanium Ultra-Elastic Wireframe",
+      "Audio Tech": "Bone Conduction + Directional Micro-Acoustic Hybrid",
+      "Prescription Support": "Standard Lens Groove (Fits Any Optometry Clinic Lens)",
+      "Battery": "6 Hours Audio Playback / 16 Hours Standby",
+      "Weight": "36 grams (World's Lightest Smart Optical Frame)"
+    },
+    "inTheBox": [
+      "1x TECHNO Titanium Optical Smart Frame (with Demo Clear Lenses)",
+      "1x Optometrist Prescription Glazing Template Card",
+      "1x Magnetic Charging Cable",
+      "1x Luxury Leather Glasses Case"
+    ]
   },
-
-  // 13. MACBOOK DOCK STAND
   {
-    id: "techno-macbook-pro-dock",
-    title: "TECHNO Precision Aluminum Laptop Stand & Hub",
-    shortTitle: "Macbook Dock Stand",
-    series: "DESK SERIES",
-    category: "Hardware & Peripherals",
-    price: 89.00,
-    compareAtPrice: 119.00,
-    rating: 4.9,
-    reviewCount: 58,
-    isSale: true,
-    isBestSeller: false,
-    inStock: true,
-    description: "Aviation-grade aluminum cooling dock with integrated 8-in-1 Thunderbolt 4 hub and 100W Power Delivery pass-through.",
-    images: [
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCx7Jgh1N1qZ284iW8WUK4D0OEI3-jeN5eqhd-tJ9OPSzbC65Bt0-RRi76Fqr2ZrjWDU7G3lT1q7iHXfGanJ5N9eNDMras3ciq48VA3witABMWbQXx2nbfHukyhTlOQ-Fl-x5ycX8FZNBrDw6YKBbsBpV2ZWpevtVh5nEkmoO2QXivJNP8Ck-18R8W34h5n0pdZO98ADFqToh67VLgzZWkEn8KdV-rAgZznhSWyGpSp"
+    "id": "techno-cyberframe-4k-ultra-pov-camera-glasses",
+    "title": "TECHNO CyberFrame 4K Ultra-POV Camera Glasses",
+    "shortTitle": "CyberFrame 4K Camera",
+    "series": "NEURAL VISION",
+    "category": "AI Glasses",
+    "price": 289.0,
+    "compareAtPrice": 389.0,
+    "rating": 4.8,
+    "reviewCount": 93,
+    "isSale": true,
+    "isBestSeller": true,
+    "inStock": true,
+    "description": "Capture the world from your eyes. Dual 4K camera sensors with electronic image stabilization, instant POV photo/video recording, 64GB onboard memory, and privacy LED.",
+    "images": [
+      "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&w=800&q=80",
+      "images/smart-glasses.jpg"
     ],
-    variants: [{ name: "Space Gray Anodized", hex: "#4B5563", imageIndex: 0 }]
+    "variants": [
+      {
+        "name": "Cyber Matte Black",
+        "hex": "#09090B",
+        "imageIndex": 0
+      },
+      {
+        "name": "Gunmetal Gray",
+        "hex": "#475569",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Dual 4K Ultra-HD Video Recording at 30fps with 6-Axis Electronic Stabilization",
+      "Instant One-Tap Shutter Button on Temple or Hands-Free Voice Commands",
+      "64GB High-Speed Onboard Flash Memory Holds Up to 500 Minutes of Video",
+      "Regulatory Privacy Indicator LED Informs Bystanders When Recording is Active"
+    ],
+    "specs": {
+      "Camera Sensor": "12MP Ultra-Wide Angle Sensor with f/2.2 Aperture",
+      "Video Resolution": "4K at 30fps / 1080p at 60fps with RockSteady EIS",
+      "Storage": "64GB High-Speed Flash Memory",
+      "Transfer": "Wi-Fi 6 Instant Phone Sync + USB-C Direct Transfer",
+      "Battery": "Up to 90 Minutes Continuous 4K Recording per Charge",
+      "Weight": "49 grams"
+    },
+    "inTheBox": [
+      "1x TECHNO CyberFrame 4K Camera Glasses",
+      "1x Charging Vault Case with 3x Recharges Built-in",
+      "1x High-Speed USB-C Data Cable",
+      "1x Microfiber Optical Pouch & Lens Cloth"
+    ]
   },
-
-  // 14. MAGNETIC TRAVEL CASE
   {
-    id: "techno-magnetic-travel-case",
-    title: "TECHNO Magnetic Travel Case",
-    shortTitle: "Magnetic Travel Case",
-    series: "ACCESSORIES",
-    category: "Accessories",
-    price: 39.00,
-    compareAtPrice: 49.00,
-    rating: 4.8,
-    reviewCount: 46,
-    isSale: true,
-    isBestSeller: false,
-    inStock: true,
-    description: "Molded ballistic nylon protective travel case with quick magnetic latch and integrated cable organizer pouch.",
-    images: [
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAt6zaJzvIbUuI7To-98uJpJp5-9RT8--CMqTBc5QkB_YmXSLq1eSo3Pi4Pp2QBFRGzN3TpsgnczhH9i9b96KLilstYsfqrpG-GDpH0ggJRdOanU0Xd92CyKmZDDkdCk18ReP8U_KBMNpp44SqKbwM_xiWci870q9PdLLihVrB5w6W4TVNKwNfGIgjOiSwPxW1oN6N2kPmbfMBCWZnnzp1iyYXRmr_VZ2xUwpaSjdSf"
+    "id": "techno-babel-live-translation-ai-glasses",
+    "title": "TECHNO Babel Live Translation AI Smart Glasses",
+    "shortTitle": "Babel Live Translation",
+    "series": "NEURAL VISION",
+    "category": "AI Glasses",
+    "price": 329.0,
+    "compareAtPrice": 439.0,
+    "rating": 4.9,
+    "reviewCount": 67,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "Break language barriers in real time. Projects live speech-to-text subtitles directly into your optical field of view across 42 international languages with sub-second latency.",
+    "images": [
+      "https://images.unsplash.com/photo-1582142306909-195724d33ffc?auto=format&fit=crop&w=800&q=80",
+      "images/smart-glasses.jpg"
     ],
-    variants: [{ name: "Standard Matte", hex: "#1A1A1A", imageIndex: 0 }]
+    "variants": [
+      {
+        "name": "Minimalist Slate Black",
+        "hex": "#1E293B",
+        "imageIndex": 0
+      },
+      {
+        "name": "Champagne Gold Detail",
+        "hex": "#D97706",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Sub-Second Real-Time Speech-to-Text Subtitles Projected in Lens",
+      "Supports 42 Major International Languages with Offline Mode for Travel",
+      "Quad Environmental Noise-Cancelling Microphones Pick Up Distant Speakers",
+      "Discreet Audio Feedback via Micro-Temple Bone Conduction"
+    ],
+    "specs": {
+      "Display": "Discreet Transparent HUD Micro-Projector in Right Lens",
+      "Language Support": "42 Languages & 88 Dialects via Deep Neural Translation",
+      "Microphones": "Quad Array with 360-Degree Directional Voice Capture",
+      "Battery": "6 Hours Continuous Translation / 18 Hours Standby",
+      "Weight": "46 grams"
+    },
+    "inTheBox": [
+      "1x TECHNO Babel Live Translation AI Glasses",
+      "1x 1-Year Global Unlimited AI Translation Cloud License",
+      "1x Fast Magnetic Snap Charging Cable",
+      "1x Hard Shell Travel Case"
+    ]
   },
-
-  // 15. 65W GAN FAST CHARGER
   {
-    id: "techno-65w-gan-fast-charger",
-    title: "TECHNO 65W GaN Fast Charger",
-    shortTitle: "65W GaN Fast Charger",
-    series: "ACCESSORIES",
-    category: "Accessories",
-    price: 29.00,
-    compareAtPrice: 39.00,
-    rating: 4.9,
-    reviewCount: 91,
-    isSale: true,
-    isBestSeller: false,
-    inStock: true,
-    description: "Ultra-compact Gallium Nitride (GaN) fast wall charger with dual USB-C Power Delivery 3.0 ports for rapid audio charging.",
-    images: [
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBUuK-w8kpF5b6vQunu6nIVXOlBsp5EiMfu5vqoy-6PwuVUdPPN-28ElvZfF3Nvrrr-fhnEbcncLrcIqLVnBwej9U-pZvlpcckomCMPWxUwcvA4i6xQHxFCXsFlNH7XzR4HkNbv3yRaFiwWEEh-hBClRoeJxFn7ChJnLsCBn9o6w7fOq-bg5t8sAd4Isa8xiWSG7-2gmPfdIk9xXzWxD533fRNIhYD-DVHH2sI1sajy"
+    "id": "techno-shield-sport-cycling-audio-sunglasses",
+    "title": "TECHNO Shield Sport Audio Cycling Sunglasses",
+    "shortTitle": "Shield Sport Cycling",
+    "series": "NEURAL VISION",
+    "category": "AI Glasses",
+    "price": 179.0,
+    "compareAtPrice": 249.0,
+    "rating": 4.8,
+    "reviewCount": 95,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "High-wrap aerodynamic panoramic shield lens designed for cyclists and marathoners. Wind-tunnel tested directional acoustic baffles cut wind noise up to 45 km/h.",
+    "images": [
+      "https://images.unsplash.com/photo-1508746829417-e6f548d8d6ed?auto=format&fit=crop&w=800&q=80",
+      "images/smart-glasses.jpg"
     ],
-    variants: [{ name: "Arctic White", hex: "#F5F5F7", imageIndex: 0 }]
+    "variants": [
+      {
+        "name": "Iridescent Mirror Shield",
+        "hex": "#6366F1",
+        "imageIndex": 0
+      },
+      {
+        "name": "Polarized Smoked Shield",
+        "hex": "#111827",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "1-Piece Panoramic Wrap Shield Lens Maximizes Peripheral Vision & Wind Protection",
+      "Aerodynamic Temple Baffles Deliver Clear Audio Even at High Cycling Speeds",
+      "IPX5 Sweatproof and Mud-Resistant Sealed Construction",
+      "Interchangeable Clear Night-Riding Lens Included in Package"
+    ],
+    "specs": {
+      "Lens": "Impact-Resistant Polycarbonate Cylindrical Shield (UV400)",
+      "Audio": "Dual 16mm High-Output Baffles with Wind Noise Reducers",
+      "Water Rating": "IPX5 Sweat & Mud Proof",
+      "Battery Life": "8 Hours Non-Stop Music Playback",
+      "Weight": "45 grams"
+    },
+    "inTheBox": [
+      "1x TECHNO Shield Sport Audio Sunglasses",
+      "1x Interchangeable High-Contrast Clear Night Lens",
+      "1x Adjustable Anti-Slip Silicone Head Strap",
+      "1x Hard Shell Sports Case with Carabiner"
+    ]
+  },
+  {
+    "id": "techno-aurora-anti-blue-light-smart-eyewear",
+    "title": "TECHNO Aurora Anti-Blue Light Smart Work Eyewear",
+    "shortTitle": "Aurora Blue Light Eyewear",
+    "series": "NEURAL VISION",
+    "category": "AI Glasses",
+    "price": 169.0,
+    "compareAtPrice": 229.0,
+    "rating": 4.9,
+    "reviewCount": 110,
+    "isSale": true,
+    "isBestSeller": true,
+    "inStock": true,
+    "description": "The ultimate developer and desk worker glasses. Blocks 99% of harmful digital screen blue light and glare while providing crystal clear Zoom/Teams conference calling.",
+    "images": [
+      "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=800&q=80",
+      "images/smart-glasses.jpg"
+    ],
+    "variants": [
+      {
+        "name": "Matte Architectural Black",
+        "hex": "#1F2937",
+        "imageIndex": 0
+      },
+      {
+        "name": "Clear Crystal Acetate",
+        "hex": "#E2E8F0",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Medical-Grade 99% High-Energy Blue Light Filter Eliminates Eye Strain",
+      "Dual In-Temple Microphones with AI Typing Click Noise Cancellation",
+      "Open-Ear Private Speakers Allow Continuous Music Without Earbud Clamping",
+      "All-Day 10-Hour Conference Calling & Meeting Battery Life"
+    ],
+    "specs": {
+      "Lenses": "Anti-Reflective Blue-Light Blocking Optical Resin (Zero Color Distortion)",
+      "Microphones": "Dual Acoustic Beamforming with Background Silence Engine",
+      "Audio": "Dual 15mm Micro-Speakers with Directed Sound Cone",
+      "Battery": "10 Hours Talk Time / 18 Hours Standby",
+      "Weight": "39 grams Ultralight"
+    },
+    "inTheBox": [
+      "1x TECHNO Aurora Anti-Blue Light Smart Eyewear",
+      "1x Fast Magnetic Snap USB-C Charging Cable",
+      "1x Minimalist Desk Display Stand",
+      "1x Optical Cleaning Cloth"
+    ]
+  },
+  {
+    "id": "techno-stealth-aviator-classic-audio-shades",
+    "title": "TECHNO Stealth Aviator Classic Smart Audio Shades",
+    "shortTitle": "Stealth Aviator Audio",
+    "series": "NEURAL VISION",
+    "category": "AI Glasses",
+    "price": 199.0,
+    "compareAtPrice": 279.0,
+    "rating": 4.9,
+    "reviewCount": 81,
+    "isSale": true,
+    "isBestSeller": false,
+    "inStock": true,
+    "description": "Timeless teardrop aviator pilot frame crafted from surgical stainless steel with gradient polarized lenses and invisibly integrated micro-acoustic temples.",
+    "images": [
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=800&q=80",
+      "images/smart-glasses.jpg"
+    ],
+    "variants": [
+      {
+        "name": "Matte Gunmetal / Gray Gradient",
+        "hex": "#374151",
+        "imageIndex": 0
+      },
+      {
+        "name": "Brushed Gold / Green Polarized",
+        "hex": "#B45309",
+        "imageIndex": 0
+      }
+    ],
+    "features": [
+      "Iconic Double-Bridge Teardrop Aviator Surgical Steel Construction",
+      "High-Definition Gradient Polarized UV400 Scratch-Resistant Lenses",
+      "Discreet Temple Micro-Drivers Providing Rich Private Stereo Audio",
+      "Tap & Swipe Gesture Sensor for Volume Adjustment and Call Answer"
+    ],
+    "specs": {
+      "Frame": "Surgical 316L Stainless Steel Double-Bridge Aviator",
+      "Lenses": "Category 3 Polarized Gradient UV400 Shatterproof",
+      "Audio System": "Dual 16mm Directional Micro-Speakers",
+      "Battery": "7.5 Hours Continuous Playback / 14 Hours Calls",
+      "Weight": "47 grams"
+    },
+    "inTheBox": [
+      "1x TECHNO Stealth Aviator Smart Audio Shades",
+      "1x Magnetic Charging Cable",
+      "1x Structured Leather Aviator Case",
+      "1x Premium Microfiber Lens Cloth"
+    ]
   }
 ];
 
@@ -1138,7 +3240,7 @@ class TechnoApp {
                 <span class="text-sm">→</span>
               </button>
               <button onclick="technoApp.navigate('shop')" class="bg-white/10 hover:bg-white/20 text-white font-semibold text-xs uppercase tracking-widest px-8 py-4 rounded-xl border border-white/20 transition backdrop-blur-sm">
-                View Full Catalog (15 Hardware Items)
+                View Full Catalog (50 Flagship Tech Instruments)
               </button>
             </div>
             <div class="pt-6 flex items-center space-x-6 text-xs text-neutral-400">
@@ -1192,54 +3294,72 @@ class TechnoApp {
           </a>
         </div>
         
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-          <div onclick="technoApp.navigate('shop', {category: 'Smartwatches'})" class="group cursor-pointer bg-[#F8F8F8] hover:bg-white border border-gray-200 hover:border-black rounded-2xl p-5 transition-all duration-300 hover:shadow-xl flex flex-col justify-between">
-            <div class="aspect-square bg-white rounded-xl p-4 flex items-center justify-center border border-gray-100 mb-3 overflow-hidden">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+          <!-- 1. Smartwatches -->
+          <div onclick="technoApp.navigate('shop', {category: 'Smartwatches'})" class="group cursor-pointer bg-[#F8F8F8] hover:bg-white border border-gray-200 hover:border-black rounded-2xl p-4 transition-all duration-300 hover:shadow-xl flex flex-col justify-between">
+            <div class="aspect-square bg-white rounded-xl p-3 flex items-center justify-center border border-gray-100 mb-3 overflow-hidden">
               <img alt="Smartwatches" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" src="images/smartwatch-ultra.jpg"/>
             </div>
             <div>
-              <span class="text-[10px] uppercase font-bold text-gray-400 tracking-wider">Titanium &amp; Ceramic</span>
-              <h3 class="text-sm font-bold text-black flex items-center justify-between">
+              <span class="text-[10px] uppercase font-bold text-gray-400 tracking-wider">10 Flagship Models</span>
+              <h3 class="text-xs sm:text-sm font-bold text-black flex items-center justify-between">
                 <span>Smartwatches</span>
                 <span class="group-hover:translate-x-1 transition-transform">→</span>
               </h3>
             </div>
           </div>
 
-          <div onclick="technoApp.navigate('shop', {category: 'Over-Ear Headphones'})" class="group cursor-pointer bg-[#F8F8F8] hover:bg-white border border-gray-200 hover:border-black rounded-2xl p-5 transition-all duration-300 hover:shadow-xl flex flex-col justify-between">
-            <div class="aspect-square bg-white rounded-xl p-4 flex items-center justify-center border border-gray-100 mb-3 overflow-hidden">
-              <img alt="Over-Ear Headphones" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKWiKmrwGyImiWkFAT7Tdxt5p-2WkIBkhmGU5rlKvXSTDY8bbjfVYiTlvgiXd29K_QC-dwOtTGrWvUGlMSvhrkjQIgRBQSNLtN4AHkJ4an_pNiLx_tDh4rzyBbQWtTWNuYZ3eKM_AlD-uYeNxM2lHcgcFWntbBfFx8SEouDY4iTlrG7TQ3L5Eqskr6gNUJGDS6gzdscy61JtajMeOuArDJU8rYFtNgf4GztsIZAqSM"/>
+          <!-- 2. Headphones -->
+          <div onclick="technoApp.navigate('shop', {category: 'Headphones'})" class="group cursor-pointer bg-[#F8F8F8] hover:bg-white border border-gray-200 hover:border-black rounded-2xl p-4 transition-all duration-300 hover:shadow-xl flex flex-col justify-between">
+            <div class="aspect-square bg-white rounded-xl p-3 flex items-center justify-center border border-gray-100 mb-3 overflow-hidden">
+              <img alt="Headphones" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhzeAfkVnIFbTvX5yZrgkk251E9hSCkp2M3Tn1tOYXoiXBjmcMpqf-hgPIOxHC_e1AyLBA4CoNA1K75G0w001pXRLWovNJbkjW-wiOPU8aL5Afplz6EY8pv-IIGA83yrunIDWXxvwOzxj_62ipNjL6N8CLb-pNQBP1tnJl84S7XOF7n76FfWn2mtgFxafWH6xPMJFSq0_goaPS-xc1_xxKgnoB36GO60vykpjbi3M7"/>
             </div>
             <div>
-              <span class="text-[10px] uppercase font-bold text-gray-400 tracking-wider">Acoustic Reference</span>
-              <h3 class="text-sm font-bold text-black flex items-center justify-between">
+              <span class="text-[10px] uppercase font-bold text-gray-400 tracking-wider">10 Flagship Models</span>
+              <h3 class="text-xs sm:text-sm font-bold text-black flex items-center justify-between">
                 <span>Headphones</span>
                 <span class="group-hover:translate-x-1 transition-transform">→</span>
               </h3>
             </div>
           </div>
 
-          <div onclick="technoApp.navigate('shop', {category: 'Hardware & Peripherals'})" class="group cursor-pointer bg-[#F8F8F8] hover:bg-white border border-gray-200 hover:border-black rounded-2xl p-5 transition-all duration-300 hover:shadow-xl flex flex-col justify-between">
-            <div class="aspect-square bg-white rounded-xl p-4 flex items-center justify-center border border-gray-100 mb-3 overflow-hidden">
-              <img alt="Hardware" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" src="images/keyboard-minimal.jpg"/>
+          <!-- 3. Airbuds -->
+          <div onclick="technoApp.navigate('shop', {category: 'Airbuds'})" class="group cursor-pointer bg-[#F8F8F8] hover:bg-white border border-gray-200 hover:border-black rounded-2xl p-4 transition-all duration-300 hover:shadow-xl flex flex-col justify-between">
+            <div class="aspect-square bg-white rounded-xl p-3 flex items-center justify-center border border-gray-100 mb-3 overflow-hidden">
+              <img alt="Airbuds" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" src="https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=800&q=80"/>
             </div>
             <div>
-              <span class="text-[10px] uppercase font-bold text-gray-400 tracking-wider">Workspace Tech</span>
-              <h3 class="text-sm font-bold text-black flex items-center justify-between">
-                <span>Keyboards &amp; Power</span>
+              <span class="text-[10px] uppercase font-bold text-gray-400 tracking-wider">10 Flagship Models</span>
+              <h3 class="text-xs sm:text-sm font-bold text-black flex items-center justify-between">
+                <span>Airbuds &amp; TWS</span>
                 <span class="group-hover:translate-x-1 transition-transform">→</span>
               </h3>
             </div>
           </div>
 
-          <div onclick="technoApp.navigate('shop', {category: 'Smart Wearables'})" class="group cursor-pointer bg-[#F8F8F8] hover:bg-white border border-gray-200 hover:border-black rounded-2xl p-5 transition-all duration-300 hover:shadow-xl flex flex-col justify-between">
-            <div class="aspect-square bg-white rounded-xl p-4 flex items-center justify-center border border-gray-100 mb-3 overflow-hidden">
-              <img alt="Smart Wearables" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" src="images/smart-glasses.jpg"/>
+          <!-- 4. Keyboards -->
+          <div onclick="technoApp.navigate('shop', {category: 'Keyboards'})" class="group cursor-pointer bg-[#F8F8F8] hover:bg-white border border-gray-200 hover:border-black rounded-2xl p-4 transition-all duration-300 hover:shadow-xl flex flex-col justify-between">
+            <div class="aspect-square bg-white rounded-xl p-3 flex items-center justify-center border border-gray-100 mb-3 overflow-hidden">
+              <img alt="Keyboards" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" src="images/keyboard-minimal.jpg"/>
             </div>
             <div>
-              <span class="text-[10px] uppercase font-bold text-gray-400 tracking-wider">Audio Eyewear</span>
-              <h3 class="text-sm font-bold text-black flex items-center justify-between">
-                <span>Smart Glasses</span>
+              <span class="text-[10px] uppercase font-bold text-gray-400 tracking-wider">10 Flagship Models</span>
+              <h3 class="text-xs sm:text-sm font-bold text-black flex items-center justify-between">
+                <span>Keyboards</span>
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </h3>
+            </div>
+          </div>
+
+          <!-- 5. AI Glasses -->
+          <div onclick="technoApp.navigate('shop', {category: 'AI Glasses'})" class="group cursor-pointer bg-[#F8F8F8] hover:bg-white border border-gray-200 hover:border-black rounded-2xl p-4 transition-all duration-300 hover:shadow-xl flex flex-col justify-between">
+            <div class="aspect-square bg-white rounded-xl p-3 flex items-center justify-center border border-gray-100 mb-3 overflow-hidden">
+              <img alt="AI Glasses" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" src="images/smart-glasses.jpg"/>
+            </div>
+            <div>
+              <span class="text-[10px] uppercase font-bold text-gray-400 tracking-wider">10 Flagship Models</span>
+              <h3 class="text-xs sm:text-sm font-bold text-black flex items-center justify-between">
+                <span>AI Glasses</span>
                 <span class="group-hover:translate-x-1 transition-transform">→</span>
               </h3>
             </div>
@@ -1337,12 +3457,10 @@ class TechnoApp {
     const categories = [
       "All",
       "Smartwatches",
-      "Over-Ear Headphones",
-      "In-Ear Earphones",
-      "Hardware & Peripherals",
-      "Smart Wearables",
-      "Wireless Speakers",
-      "Accessories"
+      "Headphones",
+      "Airbuds",
+      "Keyboards",
+      "AI Glasses"
     ];
 
     const filtered = selectedCat === "All"
@@ -1423,68 +3541,83 @@ class TechnoApp {
         </nav>
 
         <div class="text-center max-w-xl mx-auto mb-12">
-          <span class="text-xs font-bold uppercase tracking-widest text-gray-400">Hardware Ecosystems</span>
+          <span class="text-xs font-bold uppercase tracking-widest text-gray-400">Precision Ecosystems</span>
           <h1 class="text-3xl font-extrabold uppercase tracking-tight text-black mt-1">CURATED TECH COLLECTIONS</h1>
-          <p class="text-xs text-gray-500 mt-2">Explore distinct hardware ecosystems crafted for wrist telemetry, studio acoustics, desktop productivity, and smart eyewear.</p>
+          <p class="text-xs text-gray-500 mt-2">Explore 5 specialized hardware categories featuring 50 state-of-the-art tech instruments designed for precision telemetry, audiophile acoustics, tactile typing, and neural augmented vision.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- Collection 1: Smartwatches -->
-          <div class="relative bg-neutral-900 text-white rounded-3xl overflow-hidden p-8 sm:p-12 flex flex-col justify-between min-h-[380px] group cursor-pointer" onclick="technoApp.navigate('shop', {category: 'Smartwatches'})">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Collection 1: Smartwatches (10) -->
+          <div class="relative bg-neutral-900 text-white rounded-3xl overflow-hidden p-8 flex flex-col justify-between min-h-[360px] group cursor-pointer" onclick="technoApp.navigate('shop', {category: 'Smartwatches'})">
             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10"></div>
-            <img src="images/smartwatch-ultra.jpg" alt="Chrono Watch Collection" class="absolute right-0 bottom-0 w-2/3 h-full object-contain object-right opacity-60 group-hover:scale-105 transition-transform duration-500"/>
+            <img src="images/smartwatch-ultra.jpg" alt="Smartwatches Collection" class="absolute right-0 bottom-0 w-3/5 h-full object-contain object-right opacity-60 group-hover:scale-105 transition-transform duration-500"/>
             <div class="relative z-20">
-              <span class="text-[10px] font-bold tracking-widest uppercase bg-white/20 px-3 py-1 rounded-full backdrop-blur-md">Titanium &amp; Ceramic</span>
-              <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-4">Smartwatches &amp; Chrono</h2>
-              <p class="text-xs text-neutral-300 max-w-xs mt-2">Grade 5 titanium sapphire AMOLED timepieces and curved ceramic sport watches.</p>
+              <span class="text-[10px] font-bold tracking-widest uppercase bg-white/20 px-3 py-1 rounded-full backdrop-blur-md">10 Models</span>
+              <h2 class="text-2xl font-black uppercase tracking-tight mt-4">Smartwatches &amp; Chrono</h2>
+              <p class="text-xs text-neutral-300 max-w-xs mt-2">Grade 5 titanium, ceramic bezels, dual-band GPS, AMOLED retina screens, and clinical PPG telemetry.</p>
             </div>
             <div class="relative z-20 flex items-center space-x-2 font-bold text-xs uppercase tracking-wider group-hover:translate-x-1 transition-transform">
-              <span>View Smartwatches</span>
+              <span>Explore 10 Smartwatches</span>
               <span>→</span>
             </div>
           </div>
 
-          <!-- Collection 2: Over-Ear Audio -->
-          <div class="relative bg-[#FAFAFA] border border-gray-200 text-black rounded-3xl overflow-hidden p-8 sm:p-12 flex flex-col justify-between min-h-[380px] group cursor-pointer" onclick="technoApp.navigate('shop', {category: 'Over-Ear Headphones'})">
+          <!-- Collection 2: Headphones (10) -->
+          <div class="relative bg-[#FAFAFA] border border-gray-200 text-black rounded-3xl overflow-hidden p-8 flex flex-col justify-between min-h-[360px] group cursor-pointer" onclick="technoApp.navigate('shop', {category: 'Headphones'})">
             <div class="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent z-10"></div>
-            <img src="${TECHNO_PRODUCTS[0].images[0]}" alt="Over Ear Series" class="absolute right-0 bottom-0 w-2/3 h-full object-contain object-right opacity-70 group-hover:scale-105 transition-transform duration-500"/>
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhzeAfkVnIFbTvX5yZrgkk251E9hSCkp2M3Tn1tOYXoiXBjmcMpqf-hgPIOxHC_e1AyLBA4CoNA1K75G0w001pXRLWovNJbkjW-wiOPU8aL5Afplz6EY8pv-IIGA83yrunIDWXxvwOzxj_62ipNjL6N8CLb-pNQBP1tnJl84S7XOF7n76FfWn2mtgFxafWH6xPMJFSq0_goaPS-xc1_xxKgnoB36GO60vykpjbi3M7" alt="Headphones Collection" class="absolute right-0 bottom-0 w-3/5 h-full object-contain object-right opacity-70 group-hover:scale-105 transition-transform duration-500"/>
             <div class="relative z-20">
-              <span class="text-[10px] font-bold tracking-widest uppercase bg-black text-white px-3 py-1 rounded-full">Series X</span>
-              <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-4">Over-Ear Mastery</h2>
-              <p class="text-xs text-gray-600 max-w-xs mt-2">Active Noise Cancellation reference monitors with titanium excursion drivers.</p>
+              <span class="text-[10px] font-bold tracking-widest uppercase bg-black text-white px-3 py-1 rounded-full">10 Models</span>
+              <h2 class="text-2xl font-black uppercase tracking-tight mt-4">Over-Ear Headphones</h2>
+              <p class="text-xs text-gray-600 max-w-xs mt-2">Active Noise Cancellation reference monitors, planar magnetic diaphragms, and forged carbon audio chambers.</p>
             </div>
             <div class="relative z-20 flex items-center space-x-2 font-bold text-xs uppercase tracking-wider group-hover:translate-x-1 transition-transform">
-              <span>View Headphones</span>
+              <span>Explore 10 Headphones</span>
               <span>→</span>
             </div>
           </div>
 
-          <!-- Collection 3: Hardware & Peripherals -->
-          <div class="relative bg-[#FAFAFA] border border-gray-200 text-black rounded-3xl overflow-hidden p-8 sm:p-12 flex flex-col justify-between min-h-[380px] group cursor-pointer" onclick="technoApp.navigate('shop', {category: 'Hardware & Peripherals'})">
+          <!-- Collection 3: Airbuds & TWS (10) -->
+          <div class="relative bg-[#FAFAFA] border border-gray-200 text-black rounded-3xl overflow-hidden p-8 flex flex-col justify-between min-h-[360px] group cursor-pointer" onclick="technoApp.navigate('shop', {category: 'Airbuds'})">
             <div class="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent z-10"></div>
-            <img src="images/keyboard-minimal.jpg" alt="Keyboards & Power" class="absolute right-0 bottom-0 w-2/3 h-full object-contain object-right opacity-70 group-hover:scale-105 transition-transform duration-500"/>
+            <img src="https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=800&q=80" alt="Airbuds Collection" class="absolute right-0 bottom-0 w-3/5 h-full object-contain object-right opacity-70 group-hover:scale-105 transition-transform duration-500"/>
             <div class="relative z-20">
-              <span class="text-[10px] font-bold tracking-widest uppercase bg-black text-white px-3 py-1 rounded-full">Desk &amp; Peripherals</span>
-              <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-4">Mechanical Workspace &amp; MagFlow</h2>
-              <p class="text-xs text-gray-600 max-w-xs mt-2">Low-profile CNC mechanical keyboards, magnetic battery banks, and aluminum hubs.</p>
+              <span class="text-[10px] font-bold tracking-widest uppercase bg-black text-white px-3 py-1 rounded-full">10 Models</span>
+              <h2 class="text-2xl font-black uppercase tracking-tight mt-4">Airbuds &amp; TWS</h2>
+              <p class="text-xs text-gray-600 max-w-xs mt-2">Lossless LDAC true wireless earbuds, micro sleep buds, waterproof sports hooks, and hybrid ANC drivers.</p>
             </div>
             <div class="relative z-20 flex items-center space-x-2 font-bold text-xs uppercase tracking-wider group-hover:translate-x-1 transition-transform">
-              <span>View Workspace Hardware</span>
+              <span>Explore 10 Airbuds</span>
               <span>→</span>
             </div>
           </div>
 
-          <!-- Collection 4: Smart Wearables -->
-          <div class="relative bg-neutral-900 text-white rounded-3xl overflow-hidden p-8 sm:p-12 flex flex-col justify-between min-h-[380px] group cursor-pointer" onclick="technoApp.navigate('shop', {category: 'Smart Wearables'})">
+          <!-- Collection 4: Mechanical Keyboards (10) -->
+          <div class="relative bg-[#FAFAFA] border border-gray-200 text-black rounded-3xl overflow-hidden p-8 flex flex-col justify-between min-h-[360px] group cursor-pointer" onclick="technoApp.navigate('shop', {category: 'Keyboards'})">
+            <div class="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent z-10"></div>
+            <img src="images/keyboard-minimal.jpg" alt="Keyboards Collection" class="absolute right-0 bottom-0 w-3/5 h-full object-contain object-right opacity-70 group-hover:scale-105 transition-transform duration-500"/>
+            <div class="relative z-20">
+              <span class="text-[10px] font-bold tracking-widest uppercase bg-black text-white px-3 py-1 rounded-full">10 Models</span>
+              <h2 class="text-2xl font-black uppercase tracking-tight mt-4">Mechanical Keyboards</h2>
+              <p class="text-xs text-gray-600 max-w-xs mt-2">CNC aluminum gasket boards, low-profile switches, split ergo layouts, and 8000Hz magnetic rapid-trigger.</p>
+            </div>
+            <div class="relative z-20 flex items-center space-x-2 font-bold text-xs uppercase tracking-wider group-hover:translate-x-1 transition-transform">
+              <span>Explore 10 Keyboards</span>
+              <span>→</span>
+            </div>
+          </div>
+
+          <!-- Collection 5: AI Smart Glasses (10) -->
+          <div class="relative bg-neutral-900 text-white rounded-3xl overflow-hidden p-8 flex flex-col justify-between min-h-[360px] group cursor-pointer md:col-span-2 lg:col-span-2" onclick="technoApp.navigate('shop', {category: 'AI Glasses'})">
             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10"></div>
-            <img src="images/smart-glasses.jpg" alt="Smart Glasses" class="absolute right-0 bottom-0 w-2/3 h-full object-contain object-right opacity-60 group-hover:scale-105 transition-transform duration-500"/>
-            <div class="relative z-20">
-              <span class="text-[10px] font-bold tracking-widest uppercase bg-white/20 px-3 py-1 rounded-full backdrop-blur-md">Eyewear Tech</span>
-              <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-4">Smart Audio Glasses</h2>
-              <p class="text-xs text-neutral-300 max-w-xs mt-2">Directional open-ear acoustics and polarized UV400 lenses in a 43g frame.</p>
+            <img src="images/smart-glasses.jpg" alt="AI Glasses Collection" class="absolute right-0 bottom-0 w-1/2 h-full object-contain object-right opacity-60 group-hover:scale-105 transition-transform duration-500"/>
+            <div class="relative z-20 max-w-md">
+              <span class="text-[10px] font-bold tracking-widest uppercase bg-white/20 px-3 py-1 rounded-full backdrop-blur-md">10 Models</span>
+              <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-4">AI Smart Glasses &amp; AR Eyewear</h2>
+              <p class="text-xs text-neutral-300 mt-2">Open-ear spatial audio sunglasses, micro-OLED optical HUD waveguides, 4K POV camera frames, and real-time live language translation.</p>
             </div>
-            <div class="relative z-20 flex items-center space-x-2 font-bold text-xs uppercase tracking-wider group-hover:translate-x-1 transition-transform">
-              <span>View Wearables</span>
+            <div class="relative z-20 flex items-center space-x-2 font-bold text-xs uppercase tracking-wider group-hover:translate-x-1 transition-transform mt-6">
+              <span>Explore 10 AI Glasses</span>
               <span>→</span>
             </div>
           </div>
@@ -1493,7 +3626,6 @@ class TechnoApp {
     `;
   }
 
-  // VIEW 4: PRODUCT PAGE
   renderProductView() {
     const p = this.selectedProduct || TECHNO_PRODUCTS[0];
     const activeImage = p.images[this.selectedImageIndex] || p.images[0];
@@ -1695,34 +3827,32 @@ class TechnoApp {
     const p = this.selectedProduct || TECHNO_PRODUCTS[0];
 
     if (tab === "specs") {
-      const specs = p.specs || {
-        "Transducer / Display": "Custom Hi-Res Architecture",
-        "Connectivity": "Bluetooth 5.3 BLE / Dual-Band Wireless",
-        "Chassis": "Aerospace Grade 5 Titanium & Matte Composite",
-        "Battery": "Extended Ultra-Life with Fast USB-C Recharging",
-        "Water Resistance": "Certified High-Tolerance Rating"
-      };
+      const specs = p.specs || {};
+      const entries = Object.entries(specs);
+      const half = Math.ceil(entries.length / 2);
+      const col1 = entries.slice(0, half);
+      const col2 = entries.slice(half);
 
       return `
         <div class="py-8 grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
           <div class="space-y-4">
             <h4 class="font-bold uppercase tracking-wider text-xs text-gray-400">Technical Specifications</h4>
             <dl class="divide-y divide-gray-100">
-              ${Object.entries(specs).slice(0, 4).map(([k, v]) => `
+              ${col1.map(([k, v]) => `
                 <div class="py-2.5 flex justify-between">
-                  <dt class="text-gray-500">${k}</dt>
-                  <dd class="font-medium text-black text-right pl-4">${v}</dd>
+                  <dt class="text-gray-500 font-medium">${k}</dt>
+                  <dd class="font-bold text-black text-right pl-4">${v}</dd>
                 </div>
               `).join("")}
             </dl>
           </div>
           <div class="space-y-4">
-            <h4 class="font-bold uppercase tracking-wider text-xs text-gray-400">Connectivity &amp; Standards</h4>
+            <h4 class="font-bold uppercase tracking-wider text-xs text-gray-400">Architecture &amp; Materials</h4>
             <dl class="divide-y divide-gray-100">
-              ${Object.entries(specs).slice(4).map(([k, v]) => `
+              ${col2.map(([k, v]) => `
                 <div class="py-2.5 flex justify-between">
-                  <dt class="text-gray-500">${k}</dt>
-                  <dd class="font-medium text-black text-right pl-4">${v}</dd>
+                  <dt class="text-gray-500 font-medium">${k}</dt>
+                  <dd class="font-bold text-black text-right pl-4">${v}</dd>
                 </div>
               `).join("")}
             </dl>
@@ -1732,33 +3862,30 @@ class TechnoApp {
     }
 
     if (tab === "box") {
+      const boxItems = (p.inTheBox && p.inTheBox.length > 0) ? p.inTheBox : [
+        `1x ${p.title}`,
+        `1x High-Speed Braided Fast-Charging Cable`,
+        `1x Precision Protective Travel Carrier / Dock`,
+        `1x TECHNO Authenticity Card & 2-Year International Warranty Certificate`
+      ];
+
       return `
         <div class="py-8 grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
           <div class="space-y-4">
             <h4 class="font-bold uppercase tracking-wider text-xs text-gray-400">Included in the Box</h4>
             <ul class="space-y-3">
-              <li class="flex items-center space-x-3 text-gray-700">
-                <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
-                <span>1x ${p.title}</span>
-              </li>
-              <li class="flex items-center space-x-3 text-gray-700">
-                <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
-                <span>1x Braided USB-C Fast-Charging Cable (1.5m)</span>
-              </li>
-              <li class="flex items-center space-x-3 text-gray-700">
-                <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
-                <span>1x Magnetic Protective Travel Carrier / Dock</span>
-              </li>
-              <li class="flex items-center space-x-3 text-gray-700">
-                <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
-                <span>1x TECHNO Authenticity Card &amp; 2-Year Warranty Certificate</span>
-              </li>
+              ${boxItems.map(item => `
+                <li class="flex items-center space-x-3 text-gray-800 font-medium">
+                  <span class="w-1.5 h-1.5 rounded-full bg-black shrink-0"></span>
+                  <span>${item}</span>
+                </li>
+              `).join("")}
             </ul>
           </div>
           <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 flex flex-col justify-center">
-            <h5 class="text-xs uppercase font-bold tracking-wider text-black mb-2">Sustainable Packaging</h5>
+            <h5 class="text-xs uppercase font-bold tracking-wider text-black mb-2">Sustainable &amp; Anti-Tamper Packaging</h5>
             <p class="text-xs text-gray-600 leading-relaxed">
-              Every TECHNO instrument is packaged in 100% recyclable FSC-certified paperboard printed with non-toxic soy inks. Zero single-use plastics.
+              Every TECHNO instrument is sealed with tamper-evident holographic tape and packaged in 100% recyclable FSC-certified paperboard printed with non-toxic soy inks. Zero single-use plastics.
             </p>
           </div>
         </div>
