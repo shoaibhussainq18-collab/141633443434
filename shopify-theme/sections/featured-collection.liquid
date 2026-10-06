@@ -1,0 +1,105 @@
+<!-- Best Sellers Section -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full border-t border-gray-100" data-purpose="related-products">
+  <div class="text-center mb-12">
+    <h2 class="text-2xl sm:text-3xl font-extrabold uppercase tracking-widest text-black">{{ section.settings.title | default: 'BEST SELLER' }}</h2>
+    <p class="text-xs text-gray-500 uppercase tracking-widest mt-1">{{ section.settings.subtitle | default: 'Discover popular audio gear and accessories' }}</p>
+  </div>
+  
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
+    {% for product in collections[section.settings.collection].products limit: 4 %}
+      <div class="group flex flex-col items-center">
+        <a href="{{ product.url }}" class="relative w-full aspect-square bg-[#FBFBFB] border border-gray-100 rounded-xl overflow-hidden flex items-center justify-center p-6 mb-4 transition hover:shadow-md">
+          {% if product.compare_at_price > product.price %}
+            <span class="absolute bottom-3 left-3 bg-black text-white text-[10px] font-semibold tracking-wider uppercase px-2.5 py-0.5 rounded-full">
+              Sale
+            </span>
+          {% endif %}
+          <img alt="{{ product.title | escape }}" class="object-contain w-full h-full group-hover:scale-105 transition-transform duration-300" src="{{ product.featured_image | image_url: width: 400 }}"/>
+        </a>
+        <h4 class="text-sm font-medium text-gray-900 group-hover:text-black text-center">{{ product.title }}</h4>
+        <div class="flex items-center space-x-2 mt-1">
+          {% if product.compare_at_price > product.price %}
+            <span class="text-xs text-gray-400 line-through">{{ product.compare_at_price | money }}</span>
+          {% endif %}
+          <span class="text-xs font-bold text-black">{{ product.price | money }}</span>
+        </div>
+      </div>
+    {% else %}
+      <!-- Fallback Demo Products -->
+      <div class="group flex flex-col items-center">
+        <div class="relative w-full aspect-square bg-[#FBFBFB] border border-gray-100 rounded-xl overflow-hidden flex items-center justify-center p-6 mb-4 transition hover:shadow-md">
+          <span class="absolute bottom-3 left-3 bg-black text-white text-[10px] font-semibold tracking-wider uppercase px-2.5 py-0.5 rounded-full">Sale</span>
+          <img alt="TECHNO Earphone" class="object-contain w-full h-full group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAG8qwu8PQm-tsEaM_sK7xqCHzTlMtlSyf9Auh7MOunv2Lwi7T2_L4oy9y6g7c_Z7RYGbRuHRIL1ILRgm4hUJXWiwObkDIZmT7gUAP7oa4Jn3JoI3YkXHFAQP2MUUAasuxP1SKZ3uGtOFlPnxUBV8gaVP-PoxkfFt9cMckizpQJJKLQE7ZFk6cxjuwnQNr_qJNB7A-oFzfC6ewtPJXxKcQ1TawznuYqR9wlHRlkY8-_"/>
+        </div>
+        <h4 class="text-sm font-medium text-gray-900 group-hover:text-black text-center">Earphone</h4>
+        <div class="flex items-center space-x-2 mt-1">
+          <span class="text-xs text-gray-400 line-through">$299.00 USD</span>
+          <span class="text-xs font-bold text-black">$199.00 USD</span>
+        </div>
+      </div>
+      <div class="group flex flex-col items-center">
+        <div class="relative w-full aspect-square bg-[#FBFBFB] border border-gray-100 rounded-xl overflow-hidden flex items-center justify-center p-6 mb-4 transition hover:shadow-md">
+          <span class="absolute bottom-3 left-3 bg-black text-white text-[10px] font-semibold tracking-wider uppercase px-2.5 py-0.5 rounded-full">Sale</span>
+          <img alt="TECHNO Headphone" class="object-contain w-full h-full group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkIbnZpshtyNmE0iWr11pFI9uPaRi-kEOabvsUs72354KDYfTp1dn3EoOzyRXJC1rdgrte2w_yyY-BQU8ecXDdDZKaMQuAyEDshaDka0Lp_wR9oUdEeKnCgftMEpn90K-xuUEshlcNEjenK-opYcwE8-DmRv7BTuAYRnYx1NbSjTtRpd1Cq56mSljRxIxnCX_bH8QExJE2Su0wkKA-yybhGgdBrM3r65GZuaO0m9kP"/>
+        </div>
+        <h4 class="text-sm font-medium text-gray-900 group-hover:text-black text-center">Headphone</h4>
+        <div class="flex items-center space-x-2 mt-1">
+          <span class="text-xs text-gray-400 line-through">$299.00 USD</span>
+          <span class="text-xs font-bold text-black">$199.00 USD</span>
+        </div>
+      </div>
+      <div class="group flex flex-col items-center">
+        <div class="relative w-full aspect-square bg-[#FBFBFB] border border-gray-100 rounded-xl overflow-hidden flex items-center justify-center p-6 mb-4 transition hover:shadow-md">
+          <span class="absolute bottom-3 left-3 bg-black text-white text-[10px] font-semibold tracking-wider uppercase px-2.5 py-0.5 rounded-full">Sale</span>
+          <img alt="Iphone Device" class="object-contain w-full h-full group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJhp-rfANYoH0sEVbTkLhXJbTppXYlHw73BGk79mYynjNrmRX-AJVc6V6KetWBWRjDojjBtI6VKH9EBbM1uwx4jsv99kwnRo0Glrq96ecdzOOef0jbwBydpVtPv0xCwakxHsEsOFJWdgq_VxcxQfRS2BrzlXuY9BfCSIg-VjCZL2aMnLs_crlGykvLJ-9hctb02YOu0WNrtifU3egfdn_I2UGaTpyiDk6fVJppe-KP"/>
+        </div>
+        <h4 class="text-sm font-medium text-gray-900 group-hover:text-black text-center">Iphone</h4>
+        <div class="flex items-center space-x-2 mt-1">
+          <span class="text-xs text-gray-400 line-through">$299.00 USD</span>
+          <span class="text-xs font-bold text-black">$199.00 USD</span>
+        </div>
+      </div>
+      <div class="group flex flex-col items-center">
+        <div class="relative w-full aspect-square bg-[#FBFBFB] border border-gray-100 rounded-xl overflow-hidden flex items-center justify-center p-6 mb-4 transition hover:shadow-md">
+          <span class="absolute bottom-3 left-3 bg-black text-white text-[10px] font-semibold tracking-wider uppercase px-2.5 py-0.5 rounded-full">Sale</span>
+          <img alt="TECHNO Speaker" class="object-contain w-full h-full group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-W_rcjQf5aG06Qb1Iv-KAE0yA-Rx9jt-GI0HUUAS8I6GmDHk3kcGmsy8oZaO1b2BjJSL9tioWadPryMF9MbbPPW_jGc2ENahFtbjUgX9b1i9oT6NWbNTPBhAf5sH03TuiIeofYpZirGVZMKgQBRaetp2I-uhcJN-E_B_r6xww6f-jboykMdQjODjceAYV3ayxkjsw7OngAE4bfXX6srj3UXRiI2csvOfChB3sb-LH"/>
+        </div>
+        <h4 class="text-sm font-medium text-gray-900 group-hover:text-black text-center">Speaker</h4>
+        <div class="flex items-center space-x-2 mt-1">
+          <span class="text-xs text-gray-400 line-through">$299.00 USD</span>
+          <span class="text-xs font-bold text-black">$199.00 USD</span>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Featured Collection",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "BEST SELLER"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subheading",
+      "default": "Discover popular audio gear and accessories"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Collection"
+    }
+  ]
+}
+{% endschema %}

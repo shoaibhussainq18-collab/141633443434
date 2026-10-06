@@ -1,0 +1,123 @@
+<!-- Main Product Section -->
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full" id="MainProduct-{{ section.id }}" data-section="{{ section.id }}">
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+    
+    <!-- Gallery Column (7 cols) -->
+    <div class="lg:col-span-7 flex flex-col space-y-4" data-purpose="product-gallery">
+      <!-- Main Featured Image -->
+      <div class="w-full bg-[#FAFAFA] rounded-2xl border border-gray-100 flex items-center justify-center relative p-8 sm:p-12 overflow-hidden group">
+        {% if product.compare_at_price > product.price %}
+          <span class="absolute top-4 left-4 z-10 bg-black text-white text-[11px] font-semibold tracking-wider uppercase px-3 py-1 rounded-full">
+            Sale
+          </span>
+        {% endif %}
+        <img id="mainProductImg" alt="{{ product.title | escape }}" class="w-full max-h-[520px] object-contain transition-transform duration-500 group-hover:scale-105" src="{{ product.featured_image | image_url: width: 1000 }}"/>
+      </div>
+
+      <!-- Thumbnails List -->
+      {% if product.images.size > 1 %}
+        <div class="grid grid-cols-4 gap-3 sm:gap-4">
+          {% for image in product.images %}
+            <button onclick="document.getElementById('mainProductImg').src='{{ image | image_url: width: 1000 }}'" class="aspect-square bg-[#F7F7F7] rounded-xl border {% if forloop.first %}border-2 border-black{% else %}border-gray-200 hover:border-gray-400{% endif %} p-2 flex items-center justify-center transition" type="button">
+              <img alt="{{ image.alt | escape }}" class="object-contain w-full h-full" src="{{ image | image_url: width: 200 }}"/>
+            </button>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+
+    <!-- Info & Actions Column (5 cols) -->
+    <div class="lg:col-span-5 flex flex-col space-y-6" data-purpose="product-info-panel">
+      <!-- Header & Stock -->
+      <div>
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-semibold tracking-widest text-gray-400 uppercase">{{ product.vendor | default: 'TECHNO SERIES X' }}</span>
+          <span class="inline-flex items-center text-xs font-medium text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-md">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5 animate-pulse"></span>
+            In Stock &amp; Ready to Ship
+          </span>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gray-950 uppercase leading-snug">
+          {{ product.title }}
+        </h1>
+        
+        <!-- Reviews summary -->
+        <div class="flex items-center mt-3 space-x-2">
+          <div class="flex text-black text-sm">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <span class="text-xs font-semibold text-gray-900">4.9</span>
+          <span class="text-xs text-gray-400">•</span>
+          <a class="text-xs text-gray-500 hover:text-black underline underline-offset-2 transition" href="#reviews">128 Customer Reviews</a>
+        </div>
+      </div>
+
+      <!-- Pricing Tier -->
+      <div class="p-4 bg-gray-50/70 border border-gray-200/60 rounded-xl flex items-center justify-between">
+        <div class="flex items-baseline space-x-3">
+          <span class="text-3xl font-bold tracking-tight text-black">{{ product.price | money }}</span>
+          {% if product.compare_at_price > product.price %}
+            <span class="text-base font-normal text-gray-400 line-through">{{ product.compare_at_price | money }}</span>
+          {% endif %}
+        </div>
+        {% if product.compare_at_price > product.price %}
+          <span class="text-xs font-bold text-white bg-black px-2.5 py-1 rounded-md">SAVE {{ product.compare_at_price | minus: product.price | money }}</span>
+        {% endif %}
+      </div>
+
+      <div class="text-sm text-gray-600 leading-relaxed">
+        {{ product.description }}
+      </div>
+
+      <!-- Variant Form -->
+      {% form 'product', product, id: 'product-form' %}
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+        
+        <!-- Action / Add to Cart Area -->
+        <div class="space-y-3 pt-2" data-purpose="purchase-actions">
+          <div class="flex items-center space-x-3">
+            <div class="flex items-center border border-gray-300 rounded-lg overflow-hidden bg-white h-12 w-32">
+              <button type="button" onclick="const q=this.nextElementSibling; if(q.value>1) q.value--;" class="px-3 py-2 text-gray-600 hover:text-black hover:bg-gray-100 transition h-full font-medium text-lg">-</button>
+              <input name="quantity" class="w-full text-center border-none focus:ring-0 text-sm font-semibold p-0" type="number" min="1" value="1"/>
+              <button type="button" onclick="const q=this.previousElementSibling; q.value++;" class="px-3 py-2 text-gray-600 hover:text-black hover:bg-gray-100 transition h-full font-medium text-lg">+</button>
+            </div>
+            
+            <button type="submit" name="add" class="flex-1 bg-black hover:bg-neutral-800 text-white font-medium text-sm h-12 rounded-lg transition-all flex items-center justify-center space-x-2 uppercase tracking-wider">
+              <span>Add to Cart</span>
+              <span>•</span>
+              <span>{{ product.price | money }}</span>
+            </button>
+          </div>
+
+          {{ form | payment_button }}
+        </div>
+      {% endform %}
+
+      <!-- Trust Features Grid -->
+      <div class="grid grid-cols-3 gap-2 pt-3 border-t border-gray-100 text-center" data-purpose="guarantee-badges">
+        <div class="p-2">
+          <svg class="w-5 h-5 mx-auto mb-1 text-gray-700" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          <p class="text-[11px] font-semibold text-gray-900">2-Year Warranty</p>
+          <p class="text-[10px] text-gray-500">Full replacement</p>
+        </div>
+        <div class="p-2">
+          <svg class="w-5 h-5 mx-auto mb-1 text-gray-700" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          <p class="text-[11px] font-semibold text-gray-900">30-Day Trial</p>
+          <p class="text-[10px] text-gray-500">Money back</p>
+        </div>
+        <div class="p-2">
+          <svg class="w-5 h-5 mx-auto mb-1 text-gray-700" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.25V3.75c0-.621-.504-1.125-1.125-1.125h-9c-.621 0-1.125.504-1.125 1.125v10.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          <p class="text-[11px] font-semibold text-gray-900">Free Express</p>
+          <p class="text-[10px] text-gray-500">Over $100 order</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% schema %}
+{
+  "name": "Main Product",
+  "settings": []
+}
+{% endschema %}

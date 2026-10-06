@@ -1,0 +1,77 @@
+<!-- Frequently Bought Together Bundle Section -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full" data-purpose="frequently-bought-bundle">
+  <div class="bg-[#FBFBFB] border border-gray-200 rounded-2xl p-6 sm:p-8">
+    <h3 class="text-xl font-bold uppercase tracking-tight mb-2">{{ section.settings.title | default: 'Frequently Bought Together' }}</h3>
+    <p class="text-xs text-gray-500 mb-6">{{ section.settings.subtitle | default: 'Complete your audio workspace bundle and get an extra 15% discount on accessories.' }}</p>
+    
+    <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+      <div class="flex flex-wrap items-center gap-4">
+        <!-- Item 1 -->
+        <div class="flex items-center space-x-3 bg-white p-3 rounded-xl border border-gray-200 shadow-sm">
+          <img alt="Pro Headphone" class="w-14 h-14 object-contain rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0777xi9BTnt1koEI649KEXtkwIKY_3JqfyU4Tk5J50XHMR36D-1HmlPke2eGOlVYx42AvLikE6xRtznlM8vYp2RLNmZvLoTHtrZwYoVBziwzQc430L9l7Jxh9CcYMG47RVqfE-ZRzYY77bDJDuA1-D5FfvGlcGKkpIiQjipW-Px1gxOqa5m7A2MeTByxs6hPWuMC4IWSWVEfws4uHhFso4grlI4FhihmgfexkFJ0z"/>
+          <div>
+            <p class="text-xs font-bold text-gray-900">TECHNO Headphone Pro</p>
+            <p class="text-xs font-medium text-black">$199.00 USD</p>
+          </div>
+        </div>
+        <span class="text-gray-400 font-bold text-lg">+</span>
+        <!-- Item 2 -->
+        <div class="flex items-center space-x-3 bg-white p-3 rounded-xl border border-gray-200 shadow-sm">
+          <img alt="Hard Travel Case" class="w-14 h-14 object-contain rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt6zaJzvIbUuI7To-98uJpJp5-9RT8--CMqTBc5QkB_YmXSLq1eSo3Pi4Pp2QBFRGzN3TpsgnczhH9i9b96KLilstYsfqrpG-GDpH0ggJRdOanU0Xd92CyKmZDDkdCk18ReP8U_KBMNpp44SqKbwM_xiWci870q9PdLLihVrB5w6W4TVNKwNfGIgjOiSwPxW1oN6N2kPmbfMBCWZnnzp1iyYXRmr_VZ2xUwpaSjdSf"/>
+          <div>
+            <p class="text-xs font-bold text-gray-900">Magnetic Travel Case</p>
+            <p class="text-xs font-medium text-black">$39.00 USD</p>
+          </div>
+        </div>
+        <span class="text-gray-400 font-bold text-lg">+</span>
+        <!-- Item 3 -->
+        <div class="flex items-center space-x-3 bg-white p-3 rounded-xl border border-gray-200 shadow-sm">
+          <img alt="Fast Charger" class="w-14 h-14 object-contain rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUuK-w8kpF5b6vQunu6nIVXOlBsp5EiMfu5vqoy-6PwuVUdPPN-28ElvZfF3Nvrrr-fhnEbcncLrcIqLVnBwej9U-pZvlpcckomCMPWxUwcvA4i6xQHxFCXsFlNH7XzR4HkNbv3yRaFiwWEEh-hBClRoeJxFn7ChJnLsCBn9o6w7fOq-bg5t8sAd4Isa8xiWSG7-2gmPfdIk9xXzWxD533fRNIhYD-DVHH2sI1sajy"/>
+          <div>
+            <p class="text-xs font-bold text-gray-900">65W GaN Fast Charger</p>
+            <p class="text-xs font-medium text-black">$29.00 USD</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bundle CTA -->
+      <div class="lg:border-l lg:border-gray-200 lg:pl-8 flex flex-col justify-center">
+        <div class="mb-2">
+          <span class="text-xs text-gray-500 uppercase tracking-wider block">Bundle Price:</span>
+          <div class="flex items-baseline space-x-2">
+            <span class="text-2xl font-black text-black">$227.00 USD</span>
+            <span class="text-xs text-gray-400 line-through">$267.00</span>
+          </div>
+        </div>
+        <button onclick="alert('Bundle added to cart!')" class="bg-black hover:bg-neutral-800 text-white text-xs font-semibold px-6 py-3 rounded-lg uppercase tracking-wider transition">
+          Add 3 Items To Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Bundle Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Frequently Bought Together"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subheading",
+      "default": "Complete your audio workspace bundle and get an extra 15% discount on accessories."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bundle Section"
+    }
+  ]
+}
+{% endschema %}

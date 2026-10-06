@@ -1,0 +1,27 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "settings": {}
+    },
+    "bundle": {
+      "type": "bundle-section",
+      "settings": {
+        "title": "Frequently Bought Together",
+        "subtitle": "Complete your audio workspace bundle and get an extra 15% discount on accessories."
+      }
+    },
+    "related": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "BEST SELLER",
+        "subtitle": "Discover popular audio gear and accessories"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "bundle",
+    "related"
+  ]
+}

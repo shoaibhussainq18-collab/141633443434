@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>TECHNO | Flagship Acoustic & Minimal Tech Store</title>
+  <meta name="description" content="Official TECHNO Flagship Store. Discover precision-engineered noise-cancelling headphones, true wireless earbuds, and minimalist audio hardware."/>
+  
+  <!-- Tailwind CSS CDN with plugins -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#111111',
+              charcoal: '#1A1A1A',
+              cardBg: '#FAFAFA',
+              lightGray: '#F5F5F7',
+              borderGray: '#E5E7EB',
+              muted: '#737373',
+              purple: '#5A31F4',
+              purpleHover: '#4623cf',
+              accent: '#0A84FF'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Google Font Inter -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="bg-white text-brand-black min-h-screen flex flex-col selection:bg-black selection:text-white antialiased">
+
+  <!-- ========================================== -->
+  <!-- 1. ANNOUNCEMENT BAR                       -->
+  <!-- ========================================== -->
+  <aside class="bg-[#F2F2F2] border-b border-gray-200 text-xs py-2 px-4 text-center font-normal tracking-wide text-gray-700" data-purpose="announcement-banner">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="hidden md:flex items-center space-x-4">
+        <span class="text-gray-500 flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          Free 30-Day Risk-Free Trial
+        </span>
+        <span class="text-gray-300">|</span>
+        <span class="text-gray-500">2-Year Comprehensive Warranty</span>
+      </div>
+      
+      <p class="mx-auto md:mx-0 font-medium flex items-center gap-2">
+        <span class="bg-black text-white text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded">Special</span>
+        Free Worldwide Express Shipping on all orders over $100 USD
+      </p>
+      
+      <div class="hidden md:flex items-center space-x-4 text-gray-500">
+        <!-- Currency Selector -->
+        <div class="relative inline-block text-left">
+          <select id="currencySelector" onchange="technoApp.changeCurrency(this.value)" class="bg-transparent border-none text-xs font-semibold py-0 pl-1 pr-6 cursor-pointer focus:ring-0 text-gray-700 hover:text-black">
+            <option value="USD" selected>USD ($)</option>
+            <option value="EUR">EUR (€)</option>
+            <option value="GBP">GBP (£)</option>
+            <option value="CAD">CAD ($)</option>
+            <option value="PKR">PKR (Rs)</option>
+            <option value="AED">AED (د.إ)</option>
+          </select>
+        </div>
+        <span class="text-gray-300">|</span>
+        <a href="#track-order" onclick="technoApp.navigate('track-order')" class="hover:text-black transition">Track Order</a>
+        <span class="text-gray-300">|</span>
+        <a href="#contact" onclick="technoApp.navigate('contact')" class="hover:text-black transition">Support 24/7</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================== -->
+  <!-- 2. MAIN HEADER & NAVIGATION               -->
+  <!-- ========================================== -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 transition-all duration-300" id="mainHeader" data-purpose="site-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Mobile Menu Hamburger -->
+      <button onclick="technoApp.toggleMobileMenu()" aria-label="Open mobile navigation" class="md:hidden p-2 text-gray-700 hover:text-black">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+        </svg>
+      </button>
+
+      <!-- Desktop Primary Navigation -->
+      <nav class="hidden md:flex items-center space-x-7 text-sm font-medium tracking-tight" data-purpose="desktop-nav">
+        <a href="#home" onclick="technoApp.navigate('home')" class="nav-link py-1 hover:text-black transition" data-nav="home">Home</a>
+        <a href="#shop" onclick="technoApp.navigate('shop')" class="nav-link py-1 hover:text-black transition text-gray-600" data-nav="shop">Shop All</a>
+        <a href="#collections" onclick="technoApp.navigate('collections')" class="nav-link py-1 hover:text-black transition text-gray-600" data-nav="collections">Collections</a>
+        <a href="#product" onclick="technoApp.navigate('product')" class="nav-link py-1 hover:text-black transition text-gray-600" data-nav="product">Flagship Pro</a>
+        <a href="#about" onclick="technoApp.navigate('about')" class="nav-link py-1 hover:text-black transition text-gray-600" data-nav="about">About</a>
+        <a href="#blog" onclick="technoApp.navigate('blog')" class="nav-link py-1 hover:text-black transition text-gray-600" data-nav="blog">Journal</a>
+        <a href="#contact" onclick="technoApp.navigate('contact')" class="nav-link py-1 hover:text-black transition text-gray-600" data-nav="contact">Contact</a>
+      </nav>
+
+      <!-- Center Brand Logo -->
+      <div class="flex flex-col items-center cursor-pointer" onclick="technoApp.navigate('home')" data-purpose="brand-logo">
+        <span class="text-2xl md:text-3xl font-extrabold tracking-[0.25em] uppercase text-black leading-none hover:opacity-80 transition">
+          TECHNO
+        </span>
+        <span class="text-[9px] tracking-[0.35em] text-gray-400 uppercase mt-0.5">Technology Shop</span>
+      </div>
+
+      <!-- Action Utilities -->
+      <div class="flex items-center space-x-4 sm:space-x-5" data-purpose="header-utilities">
+        <!-- Live Search Trigger -->
+        <button onclick="technoApp.openSearchModal()" aria-label="Search Store" class="p-2 text-gray-700 hover:text-black hover:bg-gray-100 rounded-full transition" type="button">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/>
+          </svg>
+        </button>
+
+        <!-- Track Order Icon Link -->
+        <button onclick="technoApp.navigate('track-order')" title="Track Your Order" class="hidden sm:inline-flex p-2 text-gray-700 hover:text-black hover:bg-gray-100 rounded-full transition" type="button">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.25V3.75c0-.621-.504-1.125-1.125-1.125h-9c-.621 0-1.125.504-1.125 1.125v10.5"/>
+          </svg>
+        </button>
+
+        <!-- Cart Trigger with Badge -->
+        <button onclick="technoApp.toggleCartDrawer()" aria-label="View Shopping Cart" class="p-2 text-gray-700 hover:text-black hover:bg-gray-100 rounded-full relative transition" type="button">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25c-.67 0-1.188-.578-1.119-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/>
+          </svg>
+          <span id="cartCountBadge" class="absolute top-1 right-0 bg-black text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center transition-transform transform scale-100">0</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-gray-200 px-6 py-5 space-y-4">
+      <a href="#home" onclick="technoApp.navigate('home'); technoApp.toggleMobileMenu();" class="block font-medium text-base text-gray-900">Home</a>
+      <a href="#shop" onclick="technoApp.navigate('shop'); technoApp.toggleMobileMenu();" class="block font-medium text-base text-gray-600">Shop Catalog</a>
+      <a href="#collections" onclick="technoApp.navigate('collections'); technoApp.toggleMobileMenu();" class="block font-medium text-base text-gray-600">Collections</a>
+      <a href="#product" onclick="technoApp.navigate('product'); technoApp.toggleMobileMenu();" class="block font-medium text-base text-gray-600">Flagship Product</a>
+      <a href="#about" onclick="technoApp.navigate('about'); technoApp.toggleMobileMenu();" class="block font-medium text-base text-gray-600">About Us</a>
+      <a href="#blog" onclick="technoApp.navigate('blog'); technoApp.toggleMobileMenu();" class="block font-medium text-base text-gray-600">TECHNO Journal</a>
+      <a href="#contact" onclick="technoApp.navigate('contact'); technoApp.toggleMobileMenu();" class="block font-medium text-base text-gray-600">Contact & Support</a>
+      <a href="#track-order" onclick="technoApp.navigate('track-order'); technoApp.toggleMobileMenu();" class="block font-medium text-base text-gray-600">Track Order</a>
+      <div class="pt-4 border-t border-gray-100 flex items-center justify-between text-xs text-gray-500">
+        <span>Currency: USD ($)</span>
+        <a href="#privacy" onclick="technoApp.navigate('privacy'); technoApp.toggleMobileMenu();">Legal Policies</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- 3. PAGE VIEW CONTAINER (ROUTING SYSTEM)     -->
+  <!-- ========================================== -->
+  <div id="appContainer" class="flex-grow">
+    <!-- Active view will be mounted here dynamically by app.js -->
+  </div>
+
+  <!-- ========================================== -->
+  <!-- 4. SLIDE-OUT CART DRAWER                   -->
+  <!-- ========================================== -->
+  <div id="cartDrawerOverlay" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300" onclick="technoApp.toggleCartDrawer()"></div>
+  <aside id="cartDrawer" class="fixed top-0 right-0 bottom-0 w-full sm:w-[450px] bg-white z-50 shadow-2xl flex flex-col transform translate-x-full transition-transform duration-300 ease-out" aria-label="Shopping Cart">
+    <!-- Drawer Header -->
+    <div class="p-6 border-b border-gray-100 flex items-center justify-between bg-white">
+      <div class="flex items-center space-x-3">
+        <h3 class="text-base font-bold uppercase tracking-wider text-black">Your Cart</h3>
+        <span id="drawerItemCount" class="text-xs font-semibold bg-gray-100 text-gray-700 px-2 py-0.5 rounded-full">0 items</span>
+      </div>
+      <button onclick="technoApp.toggleCartDrawer()" class="p-1.5 text-gray-400 hover:text-black hover:bg-gray-100 rounded-full transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Free Shipping Indicator -->
+    <div class="bg-gray-50 px-6 py-3 border-b border-gray-100">
+      <div class="flex justify-between text-xs font-medium mb-1.5">
+        <span id="freeShippingNotice">Add $100.00 more for Free Express Delivery</span>
+        <span id="freeShippingPercent" class="font-bold text-black">0%</span>
+      </div>
+      <div class="w-full bg-gray-200 h-1.5 rounded-full overflow-hidden">
+        <div id="freeShippingBar" class="bg-black h-full w-0 transition-all duration-500"></div>
+      </div>
+    </div>
+
+    <!-- Cart Items List Container -->
+    <div id="drawerCartItems" class="flex-1 overflow-y-auto p-6 space-y-4 divide-y divide-gray-100">
+      <!-- Items dynamically populated -->
+    </div>
+
+    <!-- Drawer Footer / Checkout CTA -->
+    <div class="p-6 border-t border-gray-100 bg-[#FAFAFA] space-y-4">
+      <div class="space-y-1.5 text-sm">
+        <div class="flex justify-between text-gray-500 text-xs">
+          <span>Subtotal</span>
+          <span id="drawerSubtotal" class="font-semibold text-black">$0.00 USD</span>
+        </div>
+        <div class="flex justify-between text-gray-500 text-xs">
+          <span>Estimated Shipping</span>
+          <span id="drawerShipping" class="font-semibold text-emerald-600">Calculated at checkout</span>
+        </div>
+        <div class="flex justify-between text-base font-bold text-black pt-2 border-t border-gray-200">
+          <span>Total</span>
+          <span id="drawerTotal">$0.00 USD</span>
+        </div>
+      </div>
+
+      <div class="space-y-2">
+        <button onclick="technoApp.toggleCartDrawer(); technoApp.navigate('checkout')" class="w-full bg-black hover:bg-neutral-800 text-white font-medium text-sm h-12 rounded-lg transition-all flex items-center justify-center space-x-2 uppercase tracking-wider">
+          <span>Proceed to Checkout</span>
+          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+        </button>
+        <button onclick="technoApp.toggleCartDrawer(); technoApp.navigate('cart')" class="w-full bg-white hover:bg-gray-100 text-gray-900 border border-gray-200 font-medium text-xs h-10 rounded-lg transition uppercase tracking-wider">
+          View Full Cart Page
+        </button>
+      </div>
+
+      <p class="text-[10px] text-center text-gray-400">Taxes and discounts calculated during checkout.</p>
+    </div>
+  </aside>
+
+  <!-- ========================================== -->
+  <!-- 5. LIVE SEARCH MODAL                       -->
+  <!-- ========================================== -->
+  <div id="searchModal" class="fixed inset-0 bg-black/60 backdrop-blur-md z-50 hidden opacity-0 transition-opacity duration-300 flex items-start justify-center pt-20 px-4">
+    <div class="bg-white w-full max-w-2xl rounded-2xl shadow-2xl overflow-hidden transform scale-95 transition-transform duration-300" id="searchModalBox">
+      <!-- Input Row -->
+      <div class="p-4 sm:p-6 border-b border-gray-100 flex items-center gap-3">
+        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/>
+        </svg>
+        <input id="searchInput" oninput="technoApp.handleLiveSearch(this.value)" type="text" placeholder="Search headphones, earbuds, chargers, speakers..." class="flex-1 border-none focus:ring-0 text-base font-medium placeholder-gray-400 text-black p-0"/>
+        <button onclick="technoApp.closeSearchModal()" class="text-xs uppercase font-bold tracking-wider text-gray-400 hover:text-black bg-gray-100 px-3 py-1.5 rounded-lg transition">ESC</button>
+      </div>
+
+      <!-- Quick Categories / Popular Searches -->
+      <div class="px-6 py-3 bg-gray-50 border-b border-gray-100 flex flex-wrap gap-2 text-xs">
+        <span class="text-gray-400 font-medium self-center mr-1">Trending:</span>
+        <button onclick="technoApp.setSearchTerm('Headphones')" class="bg-white border border-gray-200 px-2.5 py-1 rounded-full hover:border-black text-gray-700">Headphones</button>
+        <button onclick="technoApp.setSearchTerm('ANC')" class="bg-white border border-gray-200 px-2.5 py-1 rounded-full hover:border-black text-gray-700">ANC</button>
+        <button onclick="technoApp.setSearchTerm('Charger')" class="bg-white border border-gray-200 px-2.5 py-1 rounded-full hover:border-black text-gray-700">GaN Charger</button>
+        <button onclick="technoApp.setSearchTerm('Speaker')" class="bg-white border border-gray-200 px-2.5 py-1 rounded-full hover:border-black text-gray-700">Speaker</button>
+      </div>
+
+      <!-- Search Results Area -->
+      <div id="searchResultsList" class="p-6 max-h-[400px] overflow-y-auto divide-y divide-gray-100 space-y-3">
+        <!-- Results rendered here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- 6. TOAST NOTIFICATIONS                     -->
+  <!-- ========================================== -->
+  <div id="toastContainer" class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3 pointer-events-none"></div>
+
+  <!-- ========================================== -->
+  <!-- 7. MAIN FOOTER                            -->
+  <!-- ========================================== -->
+  <footer class="bg-[#111111] text-white pt-16 pb-12 mt-auto border-t border-neutral-800" data-purpose="site-footer">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Top Row: Newsletter & Branding -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-neutral-800">
+        <div class="md:col-span-5 space-y-4">
+          <div class="cursor-pointer" onclick="technoApp.navigate('home')">
+            <h2 class="text-2xl font-black uppercase tracking-[0.25em]">TECHNO</h2>
+            <span class="text-[9px] tracking-[0.35em] text-neutral-400 uppercase">Acoustic Architecture</span>
+          </div>
+          <p class="text-xs text-neutral-400 max-w-sm leading-relaxed">
+            Pioneering premium personal acoustic equipment and clean minimalistic modern consumer technology for creators, travelers, and audiophiles.
+          </p>
+          <div class="flex items-center space-x-3 pt-2">
+            <span class="inline-flex items-center text-[11px] text-emerald-400 bg-emerald-950/60 border border-emerald-800/80 px-2.5 py-1 rounded-md">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1.5 animate-pulse"></span>
+              All Systems Operational • Global Dispatch Active
+            </span>
+          </div>
+        </div>
+
+        <div class="md:col-span-7 flex flex-col justify-center">
+          <h5 class="text-xs uppercase font-bold tracking-widest text-neutral-300 mb-2">Subscribe to the TECHNO Journal</h5>
+          <p class="text-xs text-neutral-400 mb-4">Receive priority access to limited hardware drops, firmware updates, and exclusive 15% VIP member discount.</p>
+          <form class="flex max-w-md" onsubmit="technoApp.handleNewsletter(event)">
+            <input id="newsletterEmail" class="w-full bg-neutral-900 border border-neutral-700 text-sm px-4 py-2.5 rounded-l-lg text-white focus:outline-none focus:border-white placeholder-neutral-500" placeholder="Enter your email" type="email" required/>
+            <button class="bg-white text-black font-semibold text-xs px-6 py-2.5 rounded-r-lg uppercase tracking-wider hover:bg-neutral-200 transition" type="submit">
+              Join
+            </button>
+          </form>
+          <p class="text-[11px] text-neutral-500 mt-2">Use code <code class="text-neutral-300 font-mono">TECHNO15</code> at checkout for instant 15% off.</p>
+        </div>
+      </div>
+
+      <!-- Links Grid (All 14 Store Pages Linked) -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 py-12 text-xs">
+        <div>
+          <h6 class="font-bold uppercase tracking-wider text-neutral-300 mb-4">Store Catalog</h6>
+          <ul class="space-y-2.5 text-neutral-400">
+            <li><a class="hover:text-white transition" href="#shop" onclick="technoApp.navigate('shop')">All Products</a></li>
+            <li><a class="hover:text-white transition" href="#collections" onclick="technoApp.navigate('collections')">Collections &amp; Categories</a></li>
+            <li><a class="hover:text-white transition" href="#product" onclick="technoApp.navigate('product')">TECHNO Headphones Pro</a></li>
+            <li><a class="hover:text-white transition" href="#shop" onclick="technoApp.navigate('shop', {category: 'Over-Ear Headphones'})">Over-Ear Headphones</a></li>
+            <li><a class="hover:text-white transition" href="#shop" onclick="technoApp.navigate('shop', {category: 'In-Ear Earphones'})">True Wireless Earbuds</a></li>
+            <li><a class="hover:text-white transition" href="#shop" onclick="technoApp.navigate('shop', {category: 'Accessories'})">Power &amp; Travel Accessories</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 class="font-bold uppercase tracking-wider text-neutral-300 mb-4">Customer Care</h6>
+          <ul class="space-y-2.5 text-neutral-400">
+            <li><a class="hover:text-white transition" href="#track-order" onclick="technoApp.navigate('track-order')">Track Your Order Live</a></li>
+            <li><a class="hover:text-white transition" href="#cart" onclick="technoApp.navigate('cart')">Shopping Cart</a></li>
+            <li><a class="hover:text-white transition" href="#checkout" onclick="technoApp.navigate('checkout')">Instant Checkout</a></li>
+            <li><a class="hover:text-white transition" href="#contact" onclick="technoApp.navigate('contact')">Support Center &amp; FAQs</a></li>
+            <li><a class="hover:text-white transition" href="#shipping" onclick="technoApp.navigate('shipping')">Global Shipping Policy</a></li>
+            <li><a class="hover:text-white transition" href="#refund" onclick="technoApp.navigate('refund')">30-Day Returns &amp; Warranty</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 class="font-bold uppercase tracking-wider text-neutral-300 mb-4">Company</h6>
+          <ul class="space-y-2.5 text-neutral-400">
+            <li><a class="hover:text-white transition" href="#about" onclick="technoApp.navigate('about')">Our Acoustic Manifesto</a></li>
+            <li><a class="hover:text-white transition" href="#blog" onclick="technoApp.navigate('blog')">TECHNO Journal &amp; News</a></li>
+            <li><a class="hover:text-white transition" href="#about" onclick="technoApp.navigate('about')">Sustainability &amp; Materials</a></li>
+            <li><a class="hover:text-white transition" href="#contact" onclick="technoApp.navigate('contact')">Press &amp; Wholesale Inquiries</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 class="font-bold uppercase tracking-wider text-neutral-300 mb-4">Legal &amp; Privacy</h6>
+          <ul class="space-y-2.5 text-neutral-400">
+            <li><a class="hover:text-white transition" href="#privacy" onclick="technoApp.navigate('privacy')">Privacy Policy</a></li>
+            <li><a class="hover:text-white transition" href="#terms" onclick="technoApp.navigate('terms')">Terms of Service</a></li>
+            <li><a class="hover:text-white transition" href="#refund" onclick="technoApp.navigate('refund')">Refund &amp; Return Policy</a></li>
+            <li><a class="hover:text-white transition" href="#shipping" onclick="technoApp.navigate('shipping')">Shipping Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 border-t border-neutral-800 flex flex-col md:flex-row items-center justify-between text-[11px] text-neutral-500">
+        <p>© 2026 TECHNO Inc. All rights reserved. Powered by Shopify &amp; GitHub Pages.</p>
+        
+        <!-- Payment Badges Representation -->
+        <div class="flex items-center space-x-3 mt-4 md:mt-0 opacity-80">
+          <span class="bg-neutral-800 px-2 py-1 rounded text-neutral-300 text-[10px] font-bold">VISA</span>
+          <span class="bg-neutral-800 px-2 py-1 rounded text-neutral-300 text-[10px] font-bold">MASTERCARD</span>
+          <span class="bg-neutral-800 px-2 py-1 rounded text-neutral-300 text-[10px] font-bold">APPLE PAY</span>
+          <span class="bg-neutral-800 px-2 py-1 rounded text-neutral-300 text-[10px] font-bold">SHOP PAY</span>
+          <span class="bg-neutral-800 px-2 py-1 rounded text-neutral-300 text-[10px] font-bold">PAYPAL</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Main Application Script -->
+  <script src="app.js"></script>
+</body>
+</html>

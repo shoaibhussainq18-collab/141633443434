@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "collection_grid": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "COLLECTION CATALOG",
+        "subtitle": "Precision engineered acoustics and hardware"
+      }
+    }
+  },
+  "order": [
+    "collection_grid"
+  ]
+}
