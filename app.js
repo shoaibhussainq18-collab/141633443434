@@ -334,7 +334,7 @@ const TECHNO_PRODUCTS = [
     "inStock": true,
     "description": "Revolutionary dual-layer display system combining an ultra-low power sunlight display with vibrant OLED pixels. Integrated solar ring provides up to 45 days runtime.",
     "images": [
-      "https://images.unsplash.com/photo-1544117518-30dd5ff7a986?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=800&q=80",
       "images/smartwatch-ultra.jpg"
     ],
     "variants": [
@@ -487,7 +487,7 @@ const TECHNO_PRODUCTS = [
     "inStock": true,
     "description": "Engineered for extreme continental expeditions. Preloaded offline topographic maps, titanium bezel, solar glass, and up to 60 days continuous GPS expedition battery mode.",
     "images": [
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80",
       "images/smartwatch-ultra.jpg"
     ],
     "variants": [
@@ -1194,7 +1194,7 @@ const TECHNO_PRODUCTS = [
     "inStock": true,
     "description": "Clip-on cuff design leaves your ear canals completely open. Hear traffic, colleagues, and outdoor ambient surroundings while enjoying private directional acoustics.",
     "images": [
-      "https://images.unsplash.com/photo-1593121925328-369ec8459c0e?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=800&q=80"
     ],
     "variants": [
@@ -1294,7 +1294,7 @@ const TECHNO_PRODUCTS = [
     "inStock": true,
     "description": "Featherweight everyday companion with instantaneous Bluetooth 5.3 pairing, environmental call noise suppression, responsive smart touch taps, and 28 hours runtime.",
     "images": [
-      "https://images.unsplash.com/photo-1628185521798-251f22d10669?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=800&q=80"
     ],
     "variants": [
@@ -1697,7 +1697,7 @@ const TECHNO_PRODUCTS = [
     "inStock": true,
     "description": "Two-piece split ergonomic keyboard designed to eliminate wrist pronation and RSI. Columnar ortholinear key layout, adjustable magnetic tenting, and QMK/VIA firmware.",
     "images": [
-      "https://images.unsplash.com/photo-1541140532154-b024d705b909?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=800&q=80",
       "images/keyboard-minimal.jpg"
     ],
     "variants": [
@@ -1748,7 +1748,7 @@ const TECHNO_PRODUCTS = [
     "inStock": true,
     "description": "Pure desktop minimalism. Ultra-compact 60% footprint gives maximum mouse sweep room. Pre-lubed silent linear switches and multi-device Bluetooth memory.",
     "images": [
-      "https://images.unsplash.com/photo-1563198807-b13d4c1a3f5a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=800&q=80",
       "images/keyboard-minimal.jpg"
     ],
     "variants": [
@@ -2252,7 +2252,7 @@ const TECHNO_PRODUCTS = [
     "inStock": true,
     "description": "Crafted from ultralight Japanese Beta-Titanium wire. Accepts standard optometrist prescription lenses (RX Ready). Discreet bone-conduction transducers built invisibly inside.",
     "images": [
-      "https://images.unsplash.com/photo-1509695503492-4133372b3506?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=800&q=80",
       "images/smart-glasses.jpg"
     ],
     "variants": [
